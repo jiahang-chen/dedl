@@ -120,7 +120,7 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/def/dedl#authenticationProtocol">
         <rdfs:domain rdf:resource="https://w3id.org/def/dedl#Authenticator"/>
-        <rdfs:range rdf:resource="https://w3id.org/def/dedl#AuthenticationProctol"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/dedl#AuthenticationProtocol"/>
     </owl:ObjectProperty>
     
 
@@ -268,10 +268,10 @@
     
 
 
-    <!-- https://w3id.org/def/dedl#AuthenticationProctol -->
+    <!-- https://w3id.org/def/dedl#AuthenticationProtocol -->
 
 
-    <owl:Class rdf:about="https://w3id.org/def/dedl#AuthenticationProctol"/>
+    <owl:Class rdf:about="https://w3id.org/def/dedl#AuthenticationProtocol"/>
     
 
 
@@ -443,7 +443,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/dedl#Cryptography">
-        <rdf:type rdf:resource="https://w3id.org/def/dedl#AuthenticationProctol"/>
+        <rdf:type rdf:resource="https://w3id.org/def/dedl#AuthenticationProtocol"/>
     </owl:NamedIndividual>
     
 
@@ -497,7 +497,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/dedl#Kerberos">
-        <rdf:type rdf:resource="https://w3id.org/def/dedl#AuthenticationProctol"/>
+        <rdf:type rdf:resource="https://w3id.org/def/dedl#AuthenticationProtocol"/>
     </owl:NamedIndividual>
     
 
@@ -506,7 +506,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/dedl#LDAP">
-        <rdf:type rdf:resource="https://w3id.org/def/dedl#AuthenticationProctol"/>
+        <rdf:type rdf:resource="https://w3id.org/def/dedl#AuthenticationProtocol"/>
     </owl:NamedIndividual>
     
 
@@ -569,7 +569,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/dedl#OIDC">
-        <rdf:type rdf:resource="https://w3id.org/def/dedl#AuthenticationProctol"/>
+        <rdf:type rdf:resource="https://w3id.org/def/dedl#AuthenticationProtocol"/>
     </owl:NamedIndividual>
     
 
@@ -659,7 +659,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/dedl#SAML_2.0">
-        <rdf:type rdf:resource="https://w3id.org/def/dedl#AuthenticationProctol"/>
+        <rdf:type rdf:resource="https://w3id.org/def/dedl#AuthenticationProtocol"/>
     </owl:NamedIndividual>
     
 
@@ -668,7 +668,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/dedl#Signature">
-        <rdf:type rdf:resource="https://w3id.org/def/dedl#AuthenticationProctol"/>
+        <rdf:type rdf:resource="https://w3id.org/def/dedl#AuthenticationProtocol"/>
     </owl:NamedIndividual>
     
 
@@ -722,7 +722,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/dedl#WebAuth">
-        <rdf:type rdf:resource="https://w3id.org/def/dedl#AuthenticationProctol"/>
+        <rdf:type rdf:resource="https://w3id.org/def/dedl#AuthenticationProtocol"/>
     </owl:NamedIndividual>
     
 

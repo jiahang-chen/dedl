@@ -67,7 +67,7 @@
   "@id" : "https://w3id.org/def/dedl#AuthenticationProcess",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://w3id.org/def/dedl#AuthenticationProctol",
+  "@id" : "https://w3id.org/def/dedl#AuthenticationProtocol",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://w3id.org/def/dedl#AuthenticationRiskContext",
@@ -100,7 +100,7 @@
   "@id" : "https://w3id.org/def/dedl#Cryptography",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/dedl#AuthenticationProctol"
+    "@id" : "https://w3id.org/def/dedl#AuthenticationProtocol"
   } ]
 }, {
   "@id" : "https://w3id.org/def/dedl#DAC",
@@ -151,13 +151,13 @@
   "@id" : "https://w3id.org/def/dedl#Kerberos",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/dedl#AuthenticationProctol"
+    "@id" : "https://w3id.org/def/dedl#AuthenticationProtocol"
   } ]
 }, {
   "@id" : "https://w3id.org/def/dedl#LDAP",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/dedl#AuthenticationProctol"
+    "@id" : "https://w3id.org/def/dedl#AuthenticationProtocol"
   } ]
 }, {
   "@id" : "https://w3id.org/def/dedl#MAC",
@@ -199,7 +199,7 @@
   "@id" : "https://w3id.org/def/dedl#OIDC",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/dedl#AuthenticationProctol"
+    "@id" : "https://w3id.org/def/dedl#AuthenticationProtocol"
   } ]
 }, {
   "@id" : "https://w3id.org/def/dedl#OneWay",
@@ -277,13 +277,13 @@
   "@id" : "https://w3id.org/def/dedl#SAML_2.0",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/dedl#AuthenticationProctol"
+    "@id" : "https://w3id.org/def/dedl#AuthenticationProtocol"
   } ]
 }, {
   "@id" : "https://w3id.org/def/dedl#Signature",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/dedl#AuthenticationProctol"
+    "@id" : "https://w3id.org/def/dedl#AuthenticationProtocol"
   } ]
 }, {
   "@id" : "https://w3id.org/def/dedl#SingleFactor",
@@ -319,7 +319,7 @@
   "@id" : "https://w3id.org/def/dedl#WebAuth",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/dedl#AuthenticationProctol"
+    "@id" : "https://w3id.org/def/dedl#AuthenticationProtocol"
   } ]
 }, {
   "@id" : "https://w3id.org/def/dedl#XACMLPolicyLanguage",
@@ -361,7 +361,7 @@
     "@id" : "https://w3id.org/def/dedl#Authenticator"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/dedl#AuthenticationProctol"
+    "@id" : "https://w3id.org/def/dedl#AuthenticationProtocol"
   } ]
 }, {
   "@id" : "https://w3id.org/def/dedl#authenticationRiskContext",

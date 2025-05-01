@@ -59,7 +59,7 @@
 # https://w3id.org/def/dedl#authenticationProtocol
 <https://w3id.org/def/dedl#authenticationProtocol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/def/dedl#authenticationProtocol> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/dedl#Authenticator> .
-<https://w3id.org/def/dedl#authenticationProtocol> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/dedl#AuthenticationProctol> .
+<https://w3id.org/def/dedl#authenticationProtocol> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/dedl#AuthenticationProtocol> .
 # 
 # https://w3id.org/def/dedl#authenticationRiskContext
 <https://w3id.org/def/dedl#authenticationRiskContext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -134,8 +134,8 @@
 # https://w3id.org/def/dedl#AuthenticationProcess
 <https://w3id.org/def/dedl#AuthenticationProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
-# https://w3id.org/def/dedl#AuthenticationProctol
-<https://w3id.org/def/dedl#AuthenticationProctol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# https://w3id.org/def/dedl#AuthenticationProtocol
+<https://w3id.org/def/dedl#AuthenticationProtocol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # https://w3id.org/def/dedl#AuthenticationRiskContext
 <https://w3id.org/def/dedl#AuthenticationRiskContext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -214,7 +214,7 @@
 # 
 # https://w3id.org/def/dedl#Cryptography
 <https://w3id.org/def/dedl#Cryptography> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/def/dedl#Cryptography> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AuthenticationProctol> .
+<https://w3id.org/def/dedl#Cryptography> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AuthenticationProtocol> .
 # 
 # https://w3id.org/def/dedl#DAC
 <https://w3id.org/def/dedl#DAC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -238,11 +238,11 @@
 # 
 # https://w3id.org/def/dedl#Kerberos
 <https://w3id.org/def/dedl#Kerberos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/def/dedl#Kerberos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AuthenticationProctol> .
+<https://w3id.org/def/dedl#Kerberos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AuthenticationProtocol> .
 # 
 # https://w3id.org/def/dedl#LDAP
 <https://w3id.org/def/dedl#LDAP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/def/dedl#LDAP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AuthenticationProctol> .
+<https://w3id.org/def/dedl#LDAP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AuthenticationProtocol> .
 # 
 # https://w3id.org/def/dedl#MAC
 <https://w3id.org/def/dedl#MAC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -270,7 +270,7 @@
 # 
 # https://w3id.org/def/dedl#OIDC
 <https://w3id.org/def/dedl#OIDC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/def/dedl#OIDC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AuthenticationProctol> .
+<https://w3id.org/def/dedl#OIDC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AuthenticationProtocol> .
 # 
 # https://w3id.org/def/dedl#OneWay
 <https://w3id.org/def/dedl#OneWay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -310,11 +310,11 @@
 # 
 # https://w3id.org/def/dedl#SAML_2.0
 <https://w3id.org/def/dedl#SAML_2.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/def/dedl#SAML_2.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AuthenticationProctol> .
+<https://w3id.org/def/dedl#SAML_2.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AuthenticationProtocol> .
 # 
 # https://w3id.org/def/dedl#Signature
 <https://w3id.org/def/dedl#Signature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/def/dedl#Signature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AuthenticationProctol> .
+<https://w3id.org/def/dedl#Signature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AuthenticationProtocol> .
 # 
 # https://w3id.org/def/dedl#SingleFactor
 <https://w3id.org/def/dedl#SingleFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -338,7 +338,7 @@
 # 
 # https://w3id.org/def/dedl#WebAuth
 <https://w3id.org/def/dedl#WebAuth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/def/dedl#WebAuth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AuthenticationProctol> .
+<https://w3id.org/def/dedl#WebAuth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AuthenticationProtocol> .
 # 
 # https://w3id.org/def/dedl#XACMLPolicyLanguage
 <https://w3id.org/def/dedl#XACMLPolicyLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
