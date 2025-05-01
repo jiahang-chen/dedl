@@ -71,7 +71,7 @@ dedl:authenticationProcess rdf:type owl:ObjectProperty ;
 ###  https://w3id.org/def/dedl#authenticationProtocol
 dedl:authenticationProtocol rdf:type owl:ObjectProperty ;
                             rdfs:domain dedl:Authenticator ;
-                            rdfs:range dedl:AuthenticationProctol .
+                            rdfs:range dedl:AuthenticationProtocol .
 
 
 ###  https://w3id.org/def/dedl#authenticationRiskContext
@@ -156,8 +156,8 @@ dedl:AuthenticationFactor rdf:type owl:Class .
 dedl:AuthenticationProcess rdf:type owl:Class .
 
 
-###  https://w3id.org/def/dedl#AuthenticationProctol
-dedl:AuthenticationProctol rdf:type owl:Class .
+###  https://w3id.org/def/dedl#AuthenticationProtocol
+dedl:AuthenticationProtocol rdf:type owl:Class .
 
 
 ###  https://w3id.org/def/dedl#AuthenticationRiskContext
@@ -252,7 +252,7 @@ dedl:CapBAC rdf:type owl:NamedIndividual ,
 
 ###  https://w3id.org/def/dedl#Cryptography
 dedl:Cryptography rdf:type owl:NamedIndividual ,
-                           dedl:AuthenticationProctol .
+                           dedl:AuthenticationProtocol .
 
 
 ###  https://w3id.org/def/dedl#DAC
@@ -282,12 +282,12 @@ dedl:HybridArchitecture rdf:type owl:NamedIndividual ,
 
 ###  https://w3id.org/def/dedl#Kerberos
 dedl:Kerberos rdf:type owl:NamedIndividual ,
-                       dedl:AuthenticationProctol .
+                       dedl:AuthenticationProtocol .
 
 
 ###  https://w3id.org/def/dedl#LDAP
 dedl:LDAP rdf:type owl:NamedIndividual ,
-                   dedl:AuthenticationProctol .
+                   dedl:AuthenticationProtocol .
 
 
 ###  https://w3id.org/def/dedl#MAC
@@ -322,7 +322,7 @@ dedl:ODRL rdf:type owl:NamedIndividual ,
 
 ###  https://w3id.org/def/dedl#OIDC
 dedl:OIDC rdf:type owl:NamedIndividual ,
-                   dedl:AuthenticationProctol .
+                   dedl:AuthenticationProtocol .
 
 
 ###  https://w3id.org/def/dedl#OneWay
@@ -372,12 +372,12 @@ dedl:RightsML rdf:type owl:NamedIndividual ,
 
 ###  https://w3id.org/def/dedl#SAML_2.0
 dedl:SAML_2.0 rdf:type owl:NamedIndividual ,
-                       dedl:AuthenticationProctol .
+                       dedl:AuthenticationProtocol .
 
 
 ###  https://w3id.org/def/dedl#Signature
 dedl:Signature rdf:type owl:NamedIndividual ,
-                        dedl:AuthenticationProctol .
+                        dedl:AuthenticationProtocol .
 
 
 ###  https://w3id.org/def/dedl#SingleFactor
@@ -407,7 +407,7 @@ dedl:TwoWay rdf:type owl:NamedIndividual ,
 
 ###  https://w3id.org/def/dedl#WebAuth
 dedl:WebAuth rdf:type owl:NamedIndividual ,
-                      dedl:AuthenticationProctol .
+                      dedl:AuthenticationProtocol .
 
 
 ###  https://w3id.org/def/dedl#XACMLPolicyLanguage
