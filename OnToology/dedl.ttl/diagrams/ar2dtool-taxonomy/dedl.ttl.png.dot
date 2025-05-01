@@ -1,0 +1,8 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "dedl:Participant" "dedl:Organization" "dedl:Individual" ; /*classes style*/
+	"dedl:Individual" -> "dedl:Participant" [ label = "rdfs:subClassOf" ];
+	"dedl:Organization" -> "dedl:Participant" [ label = "rdfs:subClassOf" ];
+
+}
