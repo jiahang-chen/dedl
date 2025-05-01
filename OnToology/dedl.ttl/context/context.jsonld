@@ -69,9 +69,6 @@
     "AuthenticationProcess" : {
       "@id" : "https://w3id.org/def/dedl#AuthenticationProcess"
     },
-    "AuthenticationProctol" : {
-      "@id" : "https://w3id.org/def/dedl#AuthenticationProctol"
-    },
     "Individual" : {
       "@id" : "https://w3id.org/def/dedl#Individual"
     },
@@ -98,6 +95,9 @@
     "policy" : {
       "@id" : "https://w3id.org/def/dedl#policy",
       "@type" : "@id"
+    },
+    "AuthenticationProtocol" : {
+      "@id" : "https://w3id.org/def/dedl#AuthenticationProtocol"
     },
     "title" : {
       "@id" : "http://purl.org/dc/elements/1.1/title"
