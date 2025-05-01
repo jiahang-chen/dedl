@@ -53,91 +53,121 @@ dcterms:license rdf:type owl:AnnotationProperty .
 ###  https://w3id.org/def/dedl#accessControlModel
 dedl:accessControlModel rdf:type owl:ObjectProperty ;
                         rdfs:domain dedl:Policy ;
-                        rdfs:range dedl:AccessControlModel .
+                        rdfs:range dedl:AccessControlModel ;
+                        rdfs:comment "Associates a Policy with its AccessControlModel to define and enforce resource access rules."@en ;
+                        rdfs:label "accessControlModel"@en .
 
 
 ###  https://w3id.org/def/dedl#authenticationFactor
 dedl:authenticationFactor rdf:type owl:ObjectProperty ;
                           rdfs:domain dedl:Authenticator ;
-                          rdfs:range dedl:AuthenticationFactor .
+                          rdfs:range dedl:AuthenticationFactor ;
+                          rdfs:comment "Indicates the AuthenticationFactor that an Authenticator uses."@en ;
+                          rdfs:label "authenticationFactor"@en .
 
 
 ###  https://w3id.org/def/dedl#authenticationProcess
 dedl:authenticationProcess rdf:type owl:ObjectProperty ;
                            rdfs:domain dedl:Authenticator ;
-                           rdfs:range dedl:AuthenticationProcess .
+                           rdfs:range dedl:AuthenticationProcess ;
+                           rdfs:comment "Links an Authenticator to the AuthenticationProcess used for identity verification."@en ;
+                           rdfs:label "authenticationProcess"@en .
 
 
 ###  https://w3id.org/def/dedl#authenticationProtocol
 dedl:authenticationProtocol rdf:type owl:ObjectProperty ;
                             rdfs:domain dedl:Authenticator ;
-                            rdfs:range dedl:AuthenticationProtocol .
+                            rdfs:range dedl:AuthenticationProtocol ;
+                            rdfs:comment "Specifies the AuthenticationProtocol an Authenticator follows."@en ;
+                            rdfs:label "authenticationProtocol"@en .
 
 
 ###  https://w3id.org/def/dedl#authenticationRiskContext
 dedl:authenticationRiskContext rdf:type owl:ObjectProperty ;
                                rdfs:domain dedl:Authenticator ;
-                               rdfs:range dedl:AuthenticationRiskContext .
+                               rdfs:range dedl:AuthenticationRiskContext ;
+                               rdfs:comment "Associates an Authenticator with contextual factors that influence authentication risk."@en ;
+                               rdfs:label "authenticationRiskContext"@en .
 
 
 ###  https://w3id.org/def/dedl#authenticator
 dedl:authenticator rdf:type owl:ObjectProperty ;
                    rdfs:domain dedl:Participant ;
-                   rdfs:range dedl:Authenticator .
+                   rdfs:range dedl:Authenticator ;
+                   rdfs:comment "Relates a Participant to an Authenticator performing authentication on their behalf."@en ;
+                   rdfs:label "authenticator"@en .
 
 
 ###  https://w3id.org/def/dedl#authorizationArchitecture
 dedl:authorizationArchitecture rdf:type owl:ObjectProperty ;
                                rdfs:domain dedl:Authorizator ;
-                               rdfs:range dedl:AuthorizationArchitecture .
+                               rdfs:range dedl:AuthorizationArchitecture ;
+                               rdfs:comment "Specifies the AuthorizationArchitecture used by an Authorizator."@en ;
+                               rdfs:label "authorizationArchitecture"@en .
 
 
 ###  https://w3id.org/def/dedl#authorizationProcess
 dedl:authorizationProcess rdf:type owl:ObjectProperty ;
                           rdfs:domain dedl:Authorizator ;
-                          rdfs:range dedl:AuthorizationProcess .
+                          rdfs:range dedl:AuthorizationProcess ;
+                          rdfs:comment "Indicates the AuthorizationProcess followed by an Authorizator."@en ;
+                          rdfs:label "authorizationProcess"@en .
 
 
 ###  https://w3id.org/def/dedl#authorizator
 dedl:authorizator rdf:type owl:ObjectProperty ;
                   rdfs:domain dedl:Participant ;
-                  rdfs:range dedl:Authorizator .
+                  rdfs:range dedl:Authorizator ;
+                  rdfs:comment "Declares a Participant to be an Authorizator responsible for enforcing authorization decisions."@en ;
+                  rdfs:label "authorizator"@en .
 
 
 ###  https://w3id.org/def/dedl#entity
 dedl:entity rdf:type owl:ObjectProperty ;
             rdfs:domain dedl:Participant ;
-            rdfs:range dedl:Entity .
+            rdfs:range dedl:Entity ;
+            rdfs:comment "Associates a Participant with a particular Entity in the data ecosystem."@en ;
+            rdfs:label "entity"@en .
 
 
 ###  https://w3id.org/def/dedl#identity
 dedl:identity rdf:type owl:ObjectProperty ;
               rdfs:domain dedl:Entity ;
-              rdfs:range didl:Identity .
+              rdfs:range didl:Identity ;
+              rdfs:comment "Indicates the Identity belonging to an Entity."@en ;
+              rdfs:label "identity"@en .
 
 
 ###  https://w3id.org/def/dedl#participant
 dedl:participant rdf:type owl:ObjectProperty ;
                  rdfs:domain dedl:DataEcosystem ;
-                 rdfs:range dedl:Participant .
+                 rdfs:range dedl:Participant ;
+                 rdfs:comment "Specifies a Participant within a DataEcosystem."@en ;
+                 rdfs:label "participant"@en .
 
 
 ###  https://w3id.org/def/dedl#policy
 dedl:policy rdf:type owl:ObjectProperty ;
             rdfs:domain dedl:Entity ;
-            rdfs:range dedl:Policy .
+            rdfs:range dedl:Policy ;
+            rdfs:comment "Links an Entity to a Policy governing its usage or access rights."@en ;
+            rdfs:label "policy"@en .
 
 
 ###  https://w3id.org/def/dedl#policyLanguage
 dedl:policyLanguage rdf:type owl:ObjectProperty ;
                     rdfs:domain dedl:Policy ;
-                    rdfs:range dedl:PolicyLanguage .
+                    rdfs:range dedl:PolicyLanguage ;
+                    rdfs:comment "Specifies the PolicyLanguage used to express or encode a Policy."@en ;
+                    rdfs:label "policyLanguage"@en .
 
 
 ###  https://w3id.org/def/dedl#process
 dedl:process rdf:type owl:ObjectProperty ;
              rdfs:domain dedl:DataEcosystem ;
-             rdfs:range dedl:Process .
+             rdfs:range dedl:Process ;
+             rdfs:comment "Associates a DataEcosystem with a particular Process."@en ;
+             rdfs:label "process"@en .
 
 
 #################################################################
@@ -145,81 +175,119 @@ dedl:process rdf:type owl:ObjectProperty ;
 #################################################################
 
 ###  https://w3id.org/def/dedl#AccessControlModel
-dedl:AccessControlModel rdf:type owl:Class .
+dedl:AccessControlModel rdf:type owl:Class ;
+                        rdfs:comment "A conceptual framework defining how access to resources is managed, granted, and restricted."@en ;
+                        rdfs:label "Access Control Model"@en .
 
 
 ###  https://w3id.org/def/dedl#AuthenticationFactor
-dedl:AuthenticationFactor rdf:type owl:Class .
+dedl:AuthenticationFactor rdf:type owl:Class ;
+                          rdfs:comment "An element used to verify the identity of a user or entity (e.g. password, token, biometrics)."@en ;
+                          rdfs:label "Authentication Factor"@en .
 
 
 ###  https://w3id.org/def/dedl#AuthenticationProcess
-dedl:AuthenticationProcess rdf:type owl:Class .
+dedl:AuthenticationProcess rdf:type owl:Class ;
+                           rdfs:comment "A procedure or sequence of steps that verify the identity of a user or entity."@en ;
+                           rdfs:label "Authentication Process"@en .
 
 
 ###  https://w3id.org/def/dedl#AuthenticationProtocol
-dedl:AuthenticationProtocol rdf:type owl:Class .
+dedl:AuthenticationProtocol rdf:type owl:Class ;
+                            rdfs:comment "A specification of the interactions or steps used to perform authentication."@en ;
+                            rdfs:label "Authentication Protocol"@en .
 
 
 ###  https://w3id.org/def/dedl#AuthenticationRiskContext
-dedl:AuthenticationRiskContext rdf:type owl:Class .
+dedl:AuthenticationRiskContext rdf:type owl:Class ;
+                               rdfs:comment "Contextual attributes (time, location, device) that affect authentication risk levels."@en ;
+                               rdfs:label "Authentication Risk Context"@en .
 
 
 ###  https://w3id.org/def/dedl#Authenticator
-dedl:Authenticator rdf:type owl:Class .
+dedl:Authenticator rdf:type owl:Class ;
+                   rdfs:comment "An actor or component responsible for carrying out the authentication process."@en ;
+                   rdfs:label "Authenticator"@en .
 
 
 ###  https://w3id.org/def/dedl#AuthorizationArchitecture
-dedl:AuthorizationArchitecture rdf:type owl:Class .
+dedl:AuthorizationArchitecture rdf:type owl:Class ;
+                               rdfs:comment "A structural framework that defines how authorization decisions are made and enforced."@en ;
+                               rdfs:label "Authorization Architecture"@en .
 
 
 ###  https://w3id.org/def/dedl#AuthorizationProcess
-dedl:AuthorizationProcess rdf:type owl:Class .
+dedl:AuthorizationProcess rdf:type owl:Class ;
+                          rdfs:comment "A method or set of steps determining if an entity may access a resource."@en ;
+                          rdfs:label "Authorization Process"@en .
 
 
 ###  https://w3id.org/def/dedl#Authorizator
-dedl:Authorizator rdf:type owl:Class .
+dedl:Authorizator rdf:type owl:Class ;
+                  rdfs:comment "An actor or component that assesses permissions and enforces authorization decisions."@en ;
+                  rdfs:label "Authorizator"@en .
 
 
 ###  https://w3id.org/def/dedl#DataEcosystem
-dedl:DataEcosystem rdf:type owl:Class .
+dedl:DataEcosystem rdf:type owl:Class ;
+                   rdfs:comment "A socio-technical system in which participants share and manage data and associated processes."@en ;
+                   rdfs:label "Data Ecosystem"@en .
 
 
 ###  https://w3id.org/def/dedl#Decision
-dedl:Decision rdf:type owl:Class .
+dedl:Decision rdf:type owl:Class ;
+              rdfs:comment "An outcome regarding an authorization request, e.g. Allow or Deny."@en ;
+              rdfs:label "Decision"@en .
 
 
 ###  https://w3id.org/def/dedl#Entity
-dedl:Entity rdf:type owl:Class .
+dedl:Entity rdf:type owl:Class ;
+            rdfs:comment "Any identifiable object within the data ecosystem, e.g. a device or digital resource."@en ;
+            rdfs:label "Entity"@en .
 
 
 ###  https://w3id.org/def/dedl#Individual
 dedl:Individual rdf:type owl:Class ;
-                rdfs:subClassOf dedl:Participant .
+                rdfs:subClassOf dedl:Participant ;
+                rdfs:comment "A subclass of Participant representing a legal person."@en ;
+                rdfs:label "Individual"@en .
 
 
 ###  https://w3id.org/def/dedl#Organization
 dedl:Organization rdf:type owl:Class ;
-                  rdfs:subClassOf dedl:Participant .
+                  rdfs:subClassOf dedl:Participant ;
+                  rdfs:comment "A subclass of Participant representing a legal entity."@en ;
+                  rdfs:label "Organization"@en .
 
 
 ###  https://w3id.org/def/dedl#Participant
-dedl:Participant rdf:type owl:Class .
+dedl:Participant rdf:type owl:Class ;
+                 rdfs:comment "a stakeholder within the data ecosystem (either an Individual or Organization)."@en ;
+                 rdfs:label "Participant"@en .
 
 
 ###  https://w3id.org/def/dedl#Policy
-dedl:Policy rdf:type owl:Class .
+dedl:Policy rdf:type owl:Class ;
+            rdfs:comment "A set of rules or guidelines that govern data usage, sharing, and access."@en ;
+            rdfs:label "Policy"@en .
 
 
 ###  https://w3id.org/def/dedl#PolicyLanguage
-dedl:PolicyLanguage rdf:type owl:Class .
+dedl:PolicyLanguage rdf:type owl:Class ;
+                    rdfs:comment "A formal language for defining and expressing policies."@en ;
+                    rdfs:label "Policy Language"@en .
 
 
 ###  https://w3id.org/def/dedl#Process
-dedl:Process rdf:type owl:Class .
+dedl:Process rdf:type owl:Class ;
+             rdfs:comment "A series of operations or activities performed within the data ecosystem."@en ;
+             rdfs:label "Process"@en .
 
 
 ###  https://w3id.org/def/didl#Identity
-didl:Identity rdf:type owl:Class .
+didl:Identity rdf:type owl:Class ;
+              rdfs:comment "A unique collection of attributes, credentials, or characteristics of an entity."@en ;
+              rdfs:label "Identity"@en .
 
 
 #################################################################
@@ -228,191 +296,293 @@ didl:Identity rdf:type owl:Class .
 
 ###  https://w3id.org/def/dedl#ABAC
 dedl:ABAC rdf:type owl:NamedIndividual ,
-                   dedl:AccessControlModel .
+                   dedl:AccessControlModel ;
+          rdfs:comment "Attribute-based Access Control model, relying on attributes to define permissions."@en ;
+          rdfs:label "ABAC"@en .
 
 
 ###  https://w3id.org/def/dedl#ACP
-dedl:ACP rdf:type owl:NamedIndividual .
+dedl:ACP rdf:type owl:NamedIndividual ,
+                  dedl:PolicyLanguage ;
+         rdfs:comment "Access control policy language (ACP), a particular set of grammar, syntax rules (logical and mathematical), and operators which provides an abstraction-layer for access control policy specifications, see https://solid.github.io/authorization-panel/acp-specification/"@en ;
+         rdfs:label "ACP"@en .
 
 
 ###  https://w3id.org/def/dedl#Allow
 dedl:Allow rdf:type owl:NamedIndividual ,
-                    dedl:Decision .
+                    dedl:Decision ;
+           rdfs:comment "A Decision indicating that access is permitted."@en ;
+           rdfs:label "Allow"@en .
 
 
 ###  https://w3id.org/def/dedl#Behavior
 dedl:Behavior rdf:type owl:NamedIndividual ,
-                       dedl:AuthenticationRiskContext .
+                       dedl:AuthenticationRiskContext ;
+              rdfs:comment "A context factor reflecting user behavioral patterns (e.g., keystroke dynamics)."@en ;
+              rdfs:label "Behavior"@en .
 
 
 ###  https://w3id.org/def/dedl#CapBAC
 dedl:CapBAC rdf:type owl:NamedIndividual ,
-                     dedl:AccessControlModel .
+                     dedl:AccessControlModel ;
+            rdfs:comment "Capability-based Access Control relying on tokens or 'capabilities' to grant permissions."@en ;
+            rdfs:label "CapBAC"@en .
 
 
 ###  https://w3id.org/def/dedl#Cryptography
 dedl:Cryptography rdf:type owl:NamedIndividual ,
-                           dedl:AuthenticationProtocol .
+                           dedl:AuthenticationProtocol ;
+                  rdfs:comment "An authentication protocol leveraging cryptographic techniques to prove identity."@en ;
+                  rdfs:label "Cryptography"@en .
 
 
 ###  https://w3id.org/def/dedl#DAC
 dedl:DAC rdf:type owl:NamedIndividual ,
-                  dedl:AccessControlModel .
+                  dedl:AccessControlModel ;
+         rdfs:comment "Discretionary Access Control, where resource owners grant or deny permissions."@en ;
+         rdfs:label "DAC"@en .
 
 
 ###  https://w3id.org/def/dedl#Deny
 dedl:Deny rdf:type owl:NamedIndividual ,
-                   dedl:Decision .
+                   dedl:Decision ;
+          rdfs:comment "A Decision indicating that access is refused."@en ;
+          rdfs:label "Deny"@en .
 
 
 ###  https://w3id.org/def/dedl#Device
 dedl:Device rdf:type owl:NamedIndividual ,
-                     dedl:AuthenticationRiskContext .
+                     dedl:AuthenticationRiskContext ;
+            rdfs:comment "A factor in the authentication risk context indicating the device used for login."@en ;
+            rdfs:label "Device"@en .
+
+
+###  https://w3id.org/def/dedl#Exchange
+dedl:Exchange rdf:type owl:NamedIndividual ,
+                       dedl:Process .
+
+
+###  https://w3id.org/def/dedl#Find
+dedl:Find rdf:type owl:NamedIndividual ,
+                   dedl:Process .
 
 
 ###  https://w3id.org/def/dedl#Geolocation
 dedl:Geolocation rdf:type owl:NamedIndividual ,
-                          dedl:AuthenticationRiskContext .
+                          dedl:AuthenticationRiskContext ;
+                 rdfs:comment "A factor in the authentication risk context representing physical or network location."@en ;
+                 rdfs:label "Geolocation"@en .
 
 
 ###  https://w3id.org/def/dedl#HybridArchitecture
 dedl:HybridArchitecture rdf:type owl:NamedIndividual ,
-                                 dedl:AuthorizationArchitecture .
+                                 dedl:AuthorizationArchitecture ;
+                        rdfs:comment "An AuthorizationArchitecture combining policy-based and token-based architecture"@en ;
+                        rdfs:label "Hybrid Architecture"@en .
 
 
 ###  https://w3id.org/def/dedl#Kerberos
 dedl:Kerberos rdf:type owl:NamedIndividual ,
-                       dedl:AuthenticationProtocol .
+                       dedl:AuthenticationProtocol ;
+              rdfs:comment "A protocol using a trusted third-party ticket-granting service for authentication."@en ;
+              rdfs:label "Kerberos"@en .
 
 
 ###  https://w3id.org/def/dedl#LDAP
 dedl:LDAP rdf:type owl:NamedIndividual ,
-                   dedl:AuthenticationProtocol .
+                   dedl:AuthenticationProtocol ;
+          rdfs:comment "Lightweight Directory Access Protocol, often used to manage authentication data in directories."@en ;
+          rdfs:label "LDAP"@en .
 
 
 ###  https://w3id.org/def/dedl#MAC
 dedl:MAC rdf:type owl:NamedIndividual ,
-                  dedl:AccessControlModel .
+                  dedl:AccessControlModel ;
+         rdfs:comment "Mandatory Access Control, where policies are enforced by a central authority."@en ;
+         rdfs:label "MAC"@en .
 
 
 ###  https://w3id.org/def/dedl#MPEG-21
 dedl:MPEG-21 rdf:type owl:NamedIndividual ,
-                      dedl:PolicyLanguage .
+                      dedl:PolicyLanguage ;
+             rdfs:comment "A digital rights management and usage rights framework which can serve as a policy language."@en ;
+             rdfs:label "MPEG-21"@en .
 
 
 ###  https://w3id.org/def/dedl#MultiFactor
 dedl:MultiFactor rdf:type owl:NamedIndividual ,
-                          dedl:AuthenticationFactor .
+                          dedl:AuthenticationFactor ;
+                 rdfs:comment "An authentication factor requiring two or more independent credentials."@en ;
+                 rdfs:label "MultiFactor"@en .
 
 
 ###  https://w3id.org/def/dedl#Negotiate
 dedl:Negotiate rdf:type owl:NamedIndividual ,
-                        dedl:AuthorizationProcess .
+                        dedl:AuthorizationProcess ;
+               rdfs:comment "An authorization process involving negotiation or exchange of data before deciding access."@en ;
+               rdfs:label "Negotiate"@en .
 
 
 ###  https://w3id.org/def/dedl#OBAC
 dedl:OBAC rdf:type owl:NamedIndividual ,
-                   dedl:AccessControlModel .
+                   dedl:AccessControlModel ;
+          rdfs:comment "Ontology-based Access Control focusing on contextual policy enforcement"@en ;
+          rdfs:label "OBAC"@en .
 
 
 ###  https://w3id.org/def/dedl#ODRL
 dedl:ODRL rdf:type owl:NamedIndividual ,
-                   dedl:PolicyLanguage .
+                   dedl:PolicyLanguage ;
+          rdfs:comment "Open Digital Rights Language, commonly used to specify rights, constraints, and obligations."@en ;
+          rdfs:label "ODRL"@en .
 
 
 ###  https://w3id.org/def/dedl#OIDC
 dedl:OIDC rdf:type owl:NamedIndividual ,
-                   dedl:AuthenticationProtocol .
+                   dedl:AuthenticationProtocol ;
+          rdfs:comment "OpenID Connect, a simple identity layer built on OAuth 2.0 used for single sign-on."@en ;
+          rdfs:label "OIDC"@en .
+
+
+###  https://w3id.org/def/dedl#Offboarding
+dedl:Offboarding rdf:type owl:NamedIndividual ,
+                          dedl:Process .
+
+
+###  https://w3id.org/def/dedl#Onboarding
+dedl:Onboarding rdf:type owl:NamedIndividual ,
+                         dedl:Process .
 
 
 ###  https://w3id.org/def/dedl#OneWay
 dedl:OneWay rdf:type owl:NamedIndividual ,
-                     dedl:AuthenticationProcess .
+                     dedl:AuthenticationProcess ;
+            rdfs:comment "A one-direction authentication process, typically from a client to a server."@en ;
+            rdfs:label "One Way"@en .
 
 
 ###  https://w3id.org/def/dedl#OrBAC
 dedl:OrBAC rdf:type owl:NamedIndividual ,
-                    dedl:AccessControlModel .
+                    dedl:AccessControlModel ;
+           rdfs:comment "Organization-based Access Control, focusing on roles and contexts within an organization."@en ;
+           rdfs:label "OrBAC"@en .
 
 
 ###  https://w3id.org/def/dedl#PolicyBasedArchitecture
 dedl:PolicyBasedArchitecture rdf:type owl:NamedIndividual ,
-                                      dedl:AuthorizationArchitecture .
+                                      dedl:AuthorizationArchitecture ;
+                             rdfs:comment "An AuthorizationArchitecture where authorization relies on evaluating formalized policies."@en ;
+                             rdfs:label "Policy-based Architecture"@en .
 
 
 ###  https://w3id.org/def/dedl#Poll
 dedl:Poll rdf:type owl:NamedIndividual ,
-                   dedl:AuthorizationProcess .
+                   dedl:AuthorizationProcess ;
+          rdfs:comment "An authorization process where a client periodically checks the server for an access decision."@en ;
+          rdfs:label "Poll"@en .
 
 
 ###  https://w3id.org/def/dedl#Ponder
 dedl:Ponder rdf:type owl:NamedIndividual ,
-                     dedl:PolicyLanguage .
+                     dedl:PolicyLanguage ;
+            rdfs:comment "A policy specification language for security and management in distributed systems."@en ;
+            rdfs:label "Ponder"@en .
+
+
+###  https://w3id.org/def/dedl#Publish
+dedl:Publish rdf:type owl:NamedIndividual ,
+                      dedl:Process .
 
 
 ###  https://w3id.org/def/dedl#Push
 dedl:Push rdf:type owl:NamedIndividual ,
-                   dedl:AuthorizationProcess .
+                   dedl:AuthorizationProcess ;
+          rdfs:comment "An authorization process where the server proactively notifies the client about decisions."@en ;
+          rdfs:label "Push"@en .
 
 
 ###  https://w3id.org/def/dedl#RBAC
 dedl:RBAC rdf:type owl:NamedIndividual ,
-                   dedl:AccessControlModel .
+                   dedl:AccessControlModel ;
+          rdfs:comment "Role-based Access Control, assigning permissions to roles which are then assigned to users."@en ;
+          rdfs:label "RBAC"@en .
 
 
 ###  https://w3id.org/def/dedl#Rego
 dedl:Rego rdf:type owl:NamedIndividual ,
-                   dedl:PolicyLanguage .
+                   dedl:PolicyLanguage ;
+          rdfs:comment "A declarative policy language used with Open Policy Agent (OPA) to define fine-grained permissions."@en ;
+          rdfs:label "Rego"@en .
 
 
 ###  https://w3id.org/def/dedl#RightsML
 dedl:RightsML rdf:type owl:NamedIndividual ,
-                       dedl:PolicyLanguage .
+                       dedl:PolicyLanguage ;
+              rdfs:comment "An ODRL-based language for expressing rights and usage constraints, common in news/media."@en ;
+              rdfs:label "RightsML"@en .
 
 
 ###  https://w3id.org/def/dedl#SAML_2.0
 dedl:SAML_2.0 rdf:type owl:NamedIndividual ,
-                       dedl:AuthenticationProtocol .
+                       dedl:AuthenticationProtocol ;
+              rdfs:comment "Security Assertion Markup Language (2.0), exchanging authentication and authorization data."@en ;
+              rdfs:label "SAML 2.0"@en .
 
 
 ###  https://w3id.org/def/dedl#Signature
 dedl:Signature rdf:type owl:NamedIndividual ,
-                        dedl:AuthenticationProtocol .
+                        dedl:AuthenticationProtocol ;
+               rdfs:comment "An authentication protocol relying on digital signatures for verification."@en ;
+               rdfs:label "Signature"@en .
 
 
 ###  https://w3id.org/def/dedl#SingleFactor
 dedl:SingleFactor rdf:type owl:NamedIndividual ,
-                           dedl:AuthenticationFactor .
+                           dedl:AuthenticationFactor ;
+                  rdfs:comment "An authentication factor using only one method of verification (e.g., a single password)."@en ;
+                  rdfs:label "Single Factor"@en .
 
 
 ###  https://w3id.org/def/dedl#ThreeWay
 dedl:ThreeWay rdf:type owl:NamedIndividual ,
-                       dedl:AuthenticationProcess .
+                       dedl:AuthenticationProcess ;
+              rdfs:comment "An authentication process involving a three-part handshake or three-step verification."@en ;
+              rdfs:label "Three Way"@en .
 
 
 ###  https://w3id.org/def/dedl#Time-based
 dedl:Time-based rdf:type owl:NamedIndividual ,
-                         dedl:AuthenticationRiskContext .
+                         dedl:AuthenticationRiskContext ;
+                rdfs:comment "A context factor referencing time-sensitive credentials or restrictions (e.g., OTPs)."@en ;
+                rdfs:label "Time-based"@en .
 
 
 ###  https://w3id.org/def/dedl#TokenBasedArchitecture
 dedl:TokenBasedArchitecture rdf:type owl:NamedIndividual ,
-                                     dedl:AuthorizationArchitecture .
+                                     dedl:AuthorizationArchitecture ;
+                            rdfs:comment "An authorization architecture using tokens (e.g., JWT)"@en ;
+                            rdfs:label "Token-based Architecture"@en .
 
 
 ###  https://w3id.org/def/dedl#TwoWay
 dedl:TwoWay rdf:type owl:NamedIndividual ,
-                     dedl:AuthenticationProcess .
+                     dedl:AuthenticationProcess ;
+            rdfs:comment "A mutual authentication process where both parties verify each other's identity."@en ;
+            rdfs:label "Two Way"@en .
 
 
 ###  https://w3id.org/def/dedl#WebAuth
 dedl:WebAuth rdf:type owl:NamedIndividual ,
-                      dedl:AuthenticationProtocol .
+                      dedl:AuthenticationProtocol ;
+             rdfs:comment "A web-based authentication protocol, encompassing flows like OAuth, SAML, or WebAuthn."@en ;
+             rdfs:label "WebAuth"@en .
 
 
 ###  https://w3id.org/def/dedl#XACMLPolicyLanguage
 dedl:XACMLPolicyLanguage rdf:type owl:NamedIndividual ,
-                                  dedl:PolicyLanguage .
+                                  dedl:PolicyLanguage ;
+                         rdfs:comment "An OASIS standard policy language for defining access control rules (XACML framework)."@en ;
+                         rdfs:label "XACML Policy Language"@en .
 
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
