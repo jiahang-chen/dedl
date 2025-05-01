@@ -1,0 +1,347 @@
+<https://w3id.org/def/dedl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/def/dedl> <http://purl.org/dc/elements/1.1/description> "The Data Ecosystem Description Language (DEDL) is an abstract language to describe concepts of data ecosystems, in which different participants (i.e., organizations and individuals) share data as the primary aim."@en .
+<https://w3id.org/def/dedl> <http://purl.org/dc/elements/1.1/title> "DEDL Vocabulary & Expression 0.1"@en .
+<https://w3id.org/def/dedl> <http://purl.org/dc/terms/creator> "Jiahang Chen" .
+<https://w3id.org/def/dedl> <http://www.w3.org/2000/01/rdf-schema#comment> "This is a vocabulary for DEDL version 0.1"@en .
+<https://w3id.org/def/dedl> <http://www.w3.org/2000/01/rdf-schema#label> "DEDL"@en .
+<https://w3id.org/def/dedl> <http://www.w3.org/2002/07/owl#versionInfo> "0.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/abstract
+<http://purl.org/dc/terms/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/def/dedl#accessControlModel
+<https://w3id.org/def/dedl#accessControlModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/dedl#accessControlModel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/dedl#Policy> .
+<https://w3id.org/def/dedl#accessControlModel> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/dedl#AccessControlModel> .
+# 
+# https://w3id.org/def/dedl#authenticationFactor
+<https://w3id.org/def/dedl#authenticationFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/dedl#authenticationFactor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/dedl#Authenticator> .
+<https://w3id.org/def/dedl#authenticationFactor> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/dedl#AuthenticationFactor> .
+# 
+# https://w3id.org/def/dedl#authenticationProcess
+<https://w3id.org/def/dedl#authenticationProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/dedl#authenticationProcess> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/dedl#Authenticator> .
+<https://w3id.org/def/dedl#authenticationProcess> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/dedl#AuthenticationProcess> .
+# 
+# https://w3id.org/def/dedl#authenticationProtocol
+<https://w3id.org/def/dedl#authenticationProtocol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/dedl#authenticationProtocol> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/dedl#Authenticator> .
+<https://w3id.org/def/dedl#authenticationProtocol> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/dedl#AuthenticationProctol> .
+# 
+# https://w3id.org/def/dedl#authenticationRiskContext
+<https://w3id.org/def/dedl#authenticationRiskContext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/dedl#authenticationRiskContext> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/dedl#Authenticator> .
+<https://w3id.org/def/dedl#authenticationRiskContext> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/dedl#AuthenticationRiskContext> .
+# 
+# https://w3id.org/def/dedl#authenticator
+<https://w3id.org/def/dedl#authenticator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/dedl#authenticator> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/dedl#Participant> .
+<https://w3id.org/def/dedl#authenticator> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/dedl#Authenticator> .
+# 
+# https://w3id.org/def/dedl#authorizationArchitecture
+<https://w3id.org/def/dedl#authorizationArchitecture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/dedl#authorizationArchitecture> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/dedl#Authorizator> .
+<https://w3id.org/def/dedl#authorizationArchitecture> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/dedl#AuthorizationArchitecture> .
+# 
+# https://w3id.org/def/dedl#authorizationProcess
+<https://w3id.org/def/dedl#authorizationProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/dedl#authorizationProcess> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/dedl#Authorizator> .
+<https://w3id.org/def/dedl#authorizationProcess> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/dedl#AuthorizationProcess> .
+# 
+# https://w3id.org/def/dedl#authorizator
+<https://w3id.org/def/dedl#authorizator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/dedl#authorizator> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/dedl#Participant> .
+<https://w3id.org/def/dedl#authorizator> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/dedl#Authorizator> .
+# 
+# https://w3id.org/def/dedl#entity
+<https://w3id.org/def/dedl#entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/dedl#entity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/dedl#Participant> .
+<https://w3id.org/def/dedl#entity> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/dedl#Entity> .
+# 
+# https://w3id.org/def/dedl#identity
+<https://w3id.org/def/dedl#identity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/dedl#identity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/dedl#Entity> .
+<https://w3id.org/def/dedl#identity> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/didl#Identity> .
+# 
+# https://w3id.org/def/dedl#participant
+<https://w3id.org/def/dedl#participant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/dedl#participant> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/dedl#DataEcosystem> .
+<https://w3id.org/def/dedl#participant> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/dedl#Participant> .
+# 
+# https://w3id.org/def/dedl#policy
+<https://w3id.org/def/dedl#policy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/dedl#policy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/dedl#Entity> .
+<https://w3id.org/def/dedl#policy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/dedl#Policy> .
+# 
+# https://w3id.org/def/dedl#policyLanguage
+<https://w3id.org/def/dedl#policyLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/dedl#policyLanguage> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/dedl#Policy> .
+<https://w3id.org/def/dedl#policyLanguage> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/dedl#PolicyLanguage> .
+# 
+# https://w3id.org/def/dedl#process
+<https://w3id.org/def/dedl#process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/dedl#process> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/dedl#DataEcosystem> .
+<https://w3id.org/def/dedl#process> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/dedl#Process> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/def/dedl#AccessControlModel
+<https://w3id.org/def/dedl#AccessControlModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/dedl#AuthenticationFactor
+<https://w3id.org/def/dedl#AuthenticationFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/dedl#AuthenticationProcess
+<https://w3id.org/def/dedl#AuthenticationProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/dedl#AuthenticationProctol
+<https://w3id.org/def/dedl#AuthenticationProctol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/dedl#AuthenticationRiskContext
+<https://w3id.org/def/dedl#AuthenticationRiskContext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/dedl#Authenticator
+<https://w3id.org/def/dedl#Authenticator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/dedl#AuthorizationArchitecture
+<https://w3id.org/def/dedl#AuthorizationArchitecture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/dedl#AuthorizationProcess
+<https://w3id.org/def/dedl#AuthorizationProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/dedl#Authorizator
+<https://w3id.org/def/dedl#Authorizator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/dedl#DataEcosystem
+<https://w3id.org/def/dedl#DataEcosystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/dedl#Decision
+<https://w3id.org/def/dedl#Decision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/dedl#Entity
+<https://w3id.org/def/dedl#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/dedl#Individual
+<https://w3id.org/def/dedl#Individual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/dedl#Individual> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/dedl#Participant> .
+# 
+# https://w3id.org/def/dedl#Organization
+<https://w3id.org/def/dedl#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/dedl#Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/dedl#Participant> .
+# 
+# https://w3id.org/def/dedl#Participant
+<https://w3id.org/def/dedl#Participant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/dedl#Policy
+<https://w3id.org/def/dedl#Policy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/dedl#PolicyLanguage
+<https://w3id.org/def/dedl#PolicyLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/dedl#Process
+<https://w3id.org/def/dedl#Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/didl#Identity
+<https://w3id.org/def/didl#Identity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/def/dedl#ABAC
+<https://w3id.org/def/dedl#ABAC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/dedl#ABAC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AccessControlModel> .
+# 
+# https://w3id.org/def/dedl#ACP
+<https://w3id.org/def/dedl#ACP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/def/dedl#Allow
+<https://w3id.org/def/dedl#Allow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/dedl#Allow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#Decision> .
+# 
+# https://w3id.org/def/dedl#Behavior
+<https://w3id.org/def/dedl#Behavior> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/dedl#Behavior> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AuthenticationRiskContext> .
+# 
+# https://w3id.org/def/dedl#CapBAC
+<https://w3id.org/def/dedl#CapBAC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/dedl#CapBAC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AccessControlModel> .
+# 
+# https://w3id.org/def/dedl#Cryptography
+<https://w3id.org/def/dedl#Cryptography> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/dedl#Cryptography> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AuthenticationProctol> .
+# 
+# https://w3id.org/def/dedl#DAC
+<https://w3id.org/def/dedl#DAC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/dedl#DAC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AccessControlModel> .
+# 
+# https://w3id.org/def/dedl#Deny
+<https://w3id.org/def/dedl#Deny> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/dedl#Deny> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#Decision> .
+# 
+# https://w3id.org/def/dedl#Device
+<https://w3id.org/def/dedl#Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/dedl#Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AuthenticationRiskContext> .
+# 
+# https://w3id.org/def/dedl#Geolocation
+<https://w3id.org/def/dedl#Geolocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/dedl#Geolocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AuthenticationRiskContext> .
+# 
+# https://w3id.org/def/dedl#HybridArchitecture
+<https://w3id.org/def/dedl#HybridArchitecture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/dedl#HybridArchitecture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AuthorizationArchitecture> .
+# 
+# https://w3id.org/def/dedl#Kerberos
+<https://w3id.org/def/dedl#Kerberos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/dedl#Kerberos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AuthenticationProctol> .
+# 
+# https://w3id.org/def/dedl#LDAP
+<https://w3id.org/def/dedl#LDAP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/dedl#LDAP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AuthenticationProctol> .
+# 
+# https://w3id.org/def/dedl#MAC
+<https://w3id.org/def/dedl#MAC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/dedl#MAC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AccessControlModel> .
+# 
+# https://w3id.org/def/dedl#MPEG-21
+<https://w3id.org/def/dedl#MPEG-21> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/dedl#MPEG-21> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#PolicyLanguage> .
+# 
+# https://w3id.org/def/dedl#MultiFactor
+<https://w3id.org/def/dedl#MultiFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/dedl#MultiFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AuthenticationFactor> .
+# 
+# https://w3id.org/def/dedl#Negotiate
+<https://w3id.org/def/dedl#Negotiate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/dedl#Negotiate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AuthorizationProcess> .
+# 
+# https://w3id.org/def/dedl#OBAC
+<https://w3id.org/def/dedl#OBAC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/dedl#OBAC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AccessControlModel> .
+# 
+# https://w3id.org/def/dedl#ODRL
+<https://w3id.org/def/dedl#ODRL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/dedl#ODRL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#PolicyLanguage> .
+# 
+# https://w3id.org/def/dedl#OIDC
+<https://w3id.org/def/dedl#OIDC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/dedl#OIDC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AuthenticationProctol> .
+# 
+# https://w3id.org/def/dedl#OneWay
+<https://w3id.org/def/dedl#OneWay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/dedl#OneWay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AuthenticationProcess> .
+# 
+# https://w3id.org/def/dedl#OrBAC
+<https://w3id.org/def/dedl#OrBAC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/dedl#OrBAC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AccessControlModel> .
+# 
+# https://w3id.org/def/dedl#PolicyBasedArchitecture
+<https://w3id.org/def/dedl#PolicyBasedArchitecture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/dedl#PolicyBasedArchitecture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AuthorizationArchitecture> .
+# 
+# https://w3id.org/def/dedl#Poll
+<https://w3id.org/def/dedl#Poll> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/dedl#Poll> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AuthorizationProcess> .
+# 
+# https://w3id.org/def/dedl#Ponder
+<https://w3id.org/def/dedl#Ponder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/dedl#Ponder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#PolicyLanguage> .
+# 
+# https://w3id.org/def/dedl#Push
+<https://w3id.org/def/dedl#Push> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/dedl#Push> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AuthorizationProcess> .
+# 
+# https://w3id.org/def/dedl#RBAC
+<https://w3id.org/def/dedl#RBAC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/dedl#RBAC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AccessControlModel> .
+# 
+# https://w3id.org/def/dedl#Rego
+<https://w3id.org/def/dedl#Rego> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/dedl#Rego> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#PolicyLanguage> .
+# 
+# https://w3id.org/def/dedl#RightsML
+<https://w3id.org/def/dedl#RightsML> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/dedl#RightsML> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#PolicyLanguage> .
+# 
+# https://w3id.org/def/dedl#SAML_2.0
+<https://w3id.org/def/dedl#SAML_2.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/dedl#SAML_2.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AuthenticationProctol> .
+# 
+# https://w3id.org/def/dedl#Signature
+<https://w3id.org/def/dedl#Signature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/dedl#Signature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AuthenticationProctol> .
+# 
+# https://w3id.org/def/dedl#SingleFactor
+<https://w3id.org/def/dedl#SingleFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/dedl#SingleFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AuthenticationFactor> .
+# 
+# https://w3id.org/def/dedl#ThreeWay
+<https://w3id.org/def/dedl#ThreeWay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/dedl#ThreeWay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AuthenticationProcess> .
+# 
+# https://w3id.org/def/dedl#Time-based
+<https://w3id.org/def/dedl#Time-based> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/dedl#Time-based> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AuthenticationRiskContext> .
+# 
+# https://w3id.org/def/dedl#TokenBasedArchitecture
+<https://w3id.org/def/dedl#TokenBasedArchitecture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/dedl#TokenBasedArchitecture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AuthorizationArchitecture> .
+# 
+# https://w3id.org/def/dedl#TwoWay
+<https://w3id.org/def/dedl#TwoWay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/dedl#TwoWay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AuthenticationProcess> .
+# 
+# https://w3id.org/def/dedl#WebAuth
+<https://w3id.org/def/dedl#WebAuth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/dedl#WebAuth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AuthenticationProctol> .
+# 
+# https://w3id.org/def/dedl#XACMLPolicyLanguage
+<https://w3id.org/def/dedl#XACMLPolicyLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/dedl#XACMLPolicyLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#PolicyLanguage> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

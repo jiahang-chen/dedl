@@ -1,0 +1,148 @@
+{
+  "@context" : {
+    "abstract" : {
+      "@id" : "http://purl.org/dc/terms/abstract"
+    },
+    "Decision" : {
+      "@id" : "https://w3id.org/def/dedl#Decision"
+    },
+    "authorizator" : {
+      "@id" : "https://w3id.org/def/dedl#authorizator",
+      "@type" : "@id"
+    },
+    "AuthorizationProcess" : {
+      "@id" : "https://w3id.org/def/dedl#AuthorizationProcess"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "AuthenticationRiskContext" : {
+      "@id" : "https://w3id.org/def/dedl#AuthenticationRiskContext"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "Organization" : {
+      "@id" : "https://w3id.org/def/dedl#Organization"
+    },
+    "accessControlModel" : {
+      "@id" : "https://w3id.org/def/dedl#accessControlModel",
+      "@type" : "@id"
+    },
+    "authorizationArchitecture" : {
+      "@id" : "https://w3id.org/def/dedl#authorizationArchitecture",
+      "@type" : "@id"
+    },
+    "AccessControlModel" : {
+      "@id" : "https://w3id.org/def/dedl#AccessControlModel"
+    },
+    "AuthenticationFactor" : {
+      "@id" : "https://w3id.org/def/dedl#AuthenticationFactor"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "authenticationProtocol" : {
+      "@id" : "https://w3id.org/def/dedl#authenticationProtocol",
+      "@type" : "@id"
+    },
+    "process" : {
+      "@id" : "https://w3id.org/def/dedl#process",
+      "@type" : "@id"
+    },
+    "Authorizator" : {
+      "@id" : "https://w3id.org/def/dedl#Authorizator"
+    },
+    "authorizationProcess" : {
+      "@id" : "https://w3id.org/def/dedl#authorizationProcess",
+      "@type" : "@id"
+    },
+    "Participant" : {
+      "@id" : "https://w3id.org/def/dedl#Participant"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "AuthenticationProcess" : {
+      "@id" : "https://w3id.org/def/dedl#AuthenticationProcess"
+    },
+    "AuthenticationProctol" : {
+      "@id" : "https://w3id.org/def/dedl#AuthenticationProctol"
+    },
+    "Individual" : {
+      "@id" : "https://w3id.org/def/dedl#Individual"
+    },
+    "participant" : {
+      "@id" : "https://w3id.org/def/dedl#participant",
+      "@type" : "@id"
+    },
+    "identity" : {
+      "@id" : "https://w3id.org/def/dedl#identity",
+      "@type" : "@id"
+    },
+    "authenticationFactor" : {
+      "@id" : "https://w3id.org/def/dedl#authenticationFactor",
+      "@type" : "@id"
+    },
+    "policyLanguage" : {
+      "@id" : "https://w3id.org/def/dedl#policyLanguage",
+      "@type" : "@id"
+    },
+    "authenticator" : {
+      "@id" : "https://w3id.org/def/dedl#authenticator",
+      "@type" : "@id"
+    },
+    "policy" : {
+      "@id" : "https://w3id.org/def/dedl#policy",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "Identity" : {
+      "@id" : "https://w3id.org/def/didl#Identity"
+    },
+    "PolicyLanguage" : {
+      "@id" : "https://w3id.org/def/dedl#PolicyLanguage"
+    },
+    "Entity" : {
+      "@id" : "https://w3id.org/def/dedl#Entity"
+    },
+    "Process" : {
+      "@id" : "https://w3id.org/def/dedl#Process"
+    },
+    "DataEcosystem" : {
+      "@id" : "https://w3id.org/def/dedl#DataEcosystem"
+    },
+    "Policy" : {
+      "@id" : "https://w3id.org/def/dedl#Policy"
+    },
+    "AuthorizationArchitecture" : {
+      "@id" : "https://w3id.org/def/dedl#AuthorizationArchitecture"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "entity" : {
+      "@id" : "https://w3id.org/def/dedl#entity",
+      "@type" : "@id"
+    },
+    "authenticationProcess" : {
+      "@id" : "https://w3id.org/def/dedl#authenticationProcess",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "authenticationRiskContext" : {
+      "@id" : "https://w3id.org/def/dedl#authenticationRiskContext",
+      "@type" : "@id"
+    },
+    "Authenticator" : {
+      "@id" : "https://w3id.org/def/dedl#Authenticator"
+    }
+  }
+}
