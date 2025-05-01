@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "dedl:AccessControlModel" "dedl:AuthenticationProctol" "dedl:AuthenticationProcess" "dedl:Participant" "dedl:Entity" "dedl:AuthorizationArchitecture" "dedl:Authorizator" "dedl:Authenticator" "didl:Identity" "dedl:AuthenticationRiskContext" "dedl:DataEcosystem" "dedl:PolicyLanguage" "dedl:AuthenticationFactor" "dedl:Process" "dedl:Policy" "dedl:AuthorizationProcess" ; /*classes style*/
+node [shape = rectangle, color="orange"]; "dedl:AccessControlModel" "dedl:AuthenticationProcess" "dedl:Participant" "dedl:Entity" "dedl:AuthorizationArchitecture" "dedl:Authorizator" "dedl:Authenticator" "didl:Identity" "dedl:AuthenticationRiskContext" "dedl:DataEcosystem" "dedl:PolicyLanguage" "dedl:AuthenticationFactor" "dedl:Process" "dedl:Policy" "dedl:AuthenticationProtocol" "dedl:AuthorizationProcess" ; /*classes style*/
 	"dedl:Entity" -> "didl:Identity" [ label = "dedl:identity" ];
 	"dedl:DataEcosystem" -> "dedl:Participant" [ label = "dedl:participant" ];
 	"dedl:Policy" -> "dedl:AccessControlModel" [ label = "dedl:accessControlModel" ];
@@ -12,7 +12,7 @@ node [shape = rectangle, color="orange"]; "dedl:AccessControlModel" "dedl:Authen
 	"dedl:Participant" -> "dedl:Authenticator" [ label = "dedl:authenticator" ];
 	"dedl:Participant" -> "dedl:Authorizator" [ label = "dedl:authorizator" ];
 	"dedl:Authenticator" -> "dedl:AuthenticationRiskContext" [ label = "dedl:authenticationRiskContext" ];
-	"dedl:Authenticator" -> "dedl:AuthenticationProctol" [ label = "dedl:authenticationProtocol" ];
+	"dedl:Authenticator" -> "dedl:AuthenticationProtocol" [ label = "dedl:authenticationProtocol" ];
 	"dedl:Policy" -> "dedl:PolicyLanguage" [ label = "dedl:policyLanguage" ];
 	"dedl:Participant" -> "dedl:Entity" [ label = "dedl:entity" ];
 	"dedl:Authorizator" -> "dedl:AuthorizationArchitecture" [ label = "dedl:authorizationArchitecture" ];

@@ -6,47 +6,528 @@ This section provides details for each class and property defined by DEDL.
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
-         <a href="#Individual" title="https://w3id.org/def/dedl#Individual">
-            <span>individual</span>
-         </a>
+         <a href="#AccessControlModel" title="https://w3id.org/def/dedl#AccessControlModel">Access Control Model</a>
       </li>
       <li>
-         <a href="#Organization" title="https://w3id.org/def/dedl#Organization">
-            <span>organization</span>
-         </a>
+         <a href="#AuthenticationFactor" title="https://w3id.org/def/dedl#AuthenticationFactor">Authentication Factor</a>
+      </li>
+      <li>
+         <a href="#AuthenticationProcess" title="https://w3id.org/def/dedl#AuthenticationProcess">Authentication Process</a>
+      </li>
+      <li>
+         <a href="#AuthenticationProtocol" title="https://w3id.org/def/dedl#AuthenticationProtocol">Authentication Protocol</a>
+      </li>
+      <li>
+         <a href="#AuthenticationRiskContext"
+            title="https://w3id.org/def/dedl#AuthenticationRiskContext">Authentication Risk Context</a>
+      </li>
+      <li>
+         <a href="#Authenticator" title="https://w3id.org/def/dedl#Authenticator">Authenticator</a>
+      </li>
+      <li>
+         <a href="#AuthorizationArchitecture"
+            title="https://w3id.org/def/dedl#AuthorizationArchitecture">Authorization Architecture</a>
+      </li>
+      <li>
+         <a href="#AuthorizationProcess" title="https://w3id.org/def/dedl#AuthorizationProcess">Authorization Process</a>
+      </li>
+      <li>
+         <a href="#Authorizator" title="https://w3id.org/def/dedl#Authorizator">Authorizator</a>
+      </li>
+      <li>
+         <a href="#DataEcosystem" title="https://w3id.org/def/dedl#DataEcosystem">Data Ecosystem</a>
+      </li>
+      <li>
+         <a href="#Decision" title="https://w3id.org/def/dedl#Decision">Decision</a>
+      </li>
+      <li>
+         <a href="#Entity" title="https://w3id.org/def/dedl#Entity">Entity</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/didl#Identity" title="https://w3id.org/def/didl#Identity">Identity</a>
+      </li>
+      <li>
+         <a href="#Individual" title="https://w3id.org/def/dedl#Individual">Individual</a>
+      </li>
+      <li>
+         <a href="#Organization" title="https://w3id.org/def/dedl#Organization">Organization</a>
+      </li>
+      <li>
+         <a href="#Participant" title="https://w3id.org/def/dedl#Participant">Participant</a>
+      </li>
+      <li>
+         <a href="#Policy" title="https://w3id.org/def/dedl#Policy">Policy</a>
+      </li>
+      <li>
+         <a href="#PolicyLanguage" title="https://w3id.org/def/dedl#PolicyLanguage">Policy Language</a>
+      </li>
+      <li>
+         <a href="#Process" title="https://w3id.org/def/dedl#Process">Process</a>
       </li>
    </ul>
+   <div class="entity" id="AccessControlModel">
+      <h3>Access Control Model<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/dedl#AccessControlModel</p>
+      <div class="comment">
+         <span class="markdown">A conceptual framework defining how access to resources is managed, granted, and restricted.</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#accessControlModel" title="https://w3id.org/def/dedl#accessControlModel">accessControlModel</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#ABAC" title="https://w3id.org/def/dedl#ABAC">ABAC</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#CapBAC" title="https://w3id.org/def/dedl#CapBAC">CapBAC</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#DAC" title="https://w3id.org/def/dedl#DAC">DAC</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#MAC" title="https://w3id.org/def/dedl#MAC">MAC</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#OBAC" title="https://w3id.org/def/dedl#OBAC">OBAC</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#OrBAC" title="https://w3id.org/def/dedl#OrBAC">OrBAC</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#RBAC" title="https://w3id.org/def/dedl#RBAC">RBAC</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="AuthenticationFactor">
+      <h3>Authentication Factor<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/dedl#AuthenticationFactor</p>
+      <div class="comment">
+         <span class="markdown">An element used to verify the identity of a user or entity (e.g. password, token, biometrics).</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#authenticationFactor" title="https://w3id.org/def/dedl#authenticationFactor">authenticationFactor</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#MultiFactor" title="https://w3id.org/def/dedl#MultiFactor">MultiFactor</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#SingleFactor" title="https://w3id.org/def/dedl#SingleFactor">Single Factor</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="AuthenticationProcess">
+      <h3>Authentication Process<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/dedl#AuthenticationProcess</p>
+      <div class="comment">
+         <span class="markdown">A procedure or sequence of steps that verify the identity of a user or entity.</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#authenticationProcess" title="https://w3id.org/def/dedl#authenticationProcess">authenticationProcess</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#OneWay" title="https://w3id.org/def/dedl#OneWay">One Way</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#ThreeWay" title="https://w3id.org/def/dedl#ThreeWay">Three Way</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#TwoWay" title="https://w3id.org/def/dedl#TwoWay">Two Way</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="AuthenticationProtocol">
+      <h3>Authentication Protocol<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/dedl#AuthenticationProtocol</p>
+      <div class="comment">
+         <span class="markdown">A specification of the interactions or steps used to perform authentication.</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#authenticationProtocol" title="https://w3id.org/def/dedl#authenticationProtocol">authenticationProtocol</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#Cryptography" title="https://w3id.org/def/dedl#Cryptography">Cryptography</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Kerberos" title="https://w3id.org/def/dedl#Kerberos">Kerberos</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#LDAP" title="https://w3id.org/def/dedl#LDAP">LDAP</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#OIDC" title="https://w3id.org/def/dedl#OIDC">OIDC</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#SAML_2.0" title="https://w3id.org/def/dedl#SAML_2.0">SAML 2.0</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Signature" title="https://w3id.org/def/dedl#Signature">Signature</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#WebAuth" title="https://w3id.org/def/dedl#WebAuth">WebAuth</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="AuthenticationRiskContext">
+      <h3>Authentication Risk Context<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/dedl#AuthenticationRiskContext</p>
+      <div class="comment">
+         <span class="markdown">Contextual attributes (time, location, device) that affect authentication risk levels.</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#authenticationRiskContext"
+               title="https://w3id.org/def/dedl#authenticationRiskContext">authenticationRiskContext</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#Behavior" title="https://w3id.org/def/dedl#Behavior">Behavior</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Device" title="https://w3id.org/def/dedl#Device">Device</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Geolocation" title="https://w3id.org/def/dedl#Geolocation">Geolocation</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Time-based" title="https://w3id.org/def/dedl#Time-based">Time-based</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Authenticator">
+      <h3>Authenticator<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/dedl#Authenticator</p>
+      <div class="comment">
+         <span class="markdown">An actor or component responsible for carrying out the authentication process.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#authenticationFactor" title="https://w3id.org/def/dedl#authenticationFactor">authenticationFactor</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#authenticationProcess" title="https://w3id.org/def/dedl#authenticationProcess">authenticationProcess</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#authenticationProtocol" title="https://w3id.org/def/dedl#authenticationProtocol">authenticationProtocol</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#authenticationRiskContext"
+               title="https://w3id.org/def/dedl#authenticationRiskContext">authenticationRiskContext</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#authenticator" title="https://w3id.org/def/dedl#authenticator">authenticator</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="AuthorizationArchitecture">
+      <h3>Authorization Architecture<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/dedl#AuthorizationArchitecture</p>
+      <div class="comment">
+         <span class="markdown">A structural framework that defines how authorization decisions are made and enforced.</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#authorizationArchitecture"
+               title="https://w3id.org/def/dedl#authorizationArchitecture">authorizationArchitecture</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#HybridArchitecture" title="https://w3id.org/def/dedl#HybridArchitecture">Hybrid Architecture</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#PolicyBasedArchitecture"
+               title="https://w3id.org/def/dedl#PolicyBasedArchitecture">Policy-based Architecture</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#TokenBasedArchitecture"
+               title="https://w3id.org/def/dedl#TokenBasedArchitecture">Token-based Architecture</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="AuthorizationProcess">
+      <h3>Authorization Process<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/dedl#AuthorizationProcess</p>
+      <div class="comment">
+         <span class="markdown">A method or set of steps determining if an entity may access a resource.</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#authorizationProcess" title="https://w3id.org/def/dedl#authorizationProcess">authorizationProcess</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#Negotiate" title="https://w3id.org/def/dedl#Negotiate">Negotiate</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Poll" title="https://w3id.org/def/dedl#Poll">Poll</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Push" title="https://w3id.org/def/dedl#Push">Push</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Authorizator">
+      <h3>Authorizator<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/dedl#Authorizator</p>
+      <div class="comment">
+         <span class="markdown">An actor or component that assesses permissions and enforces authorization decisions.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#authorizationArchitecture"
+               title="https://w3id.org/def/dedl#authorizationArchitecture">authorizationArchitecture</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#authorizationProcess" title="https://w3id.org/def/dedl#authorizationProcess">authorizationProcess</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#authorizator" title="https://w3id.org/def/dedl#authorizator">authorizator</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="DataEcosystem">
+      <h3>Data Ecosystem<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/dedl#DataEcosystem</p>
+      <div class="comment">
+         <span class="markdown">A socio-technical system in which participants share and manage data and associated processes.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#participant" title="https://w3id.org/def/dedl#participant">participant</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#process" title="https://w3id.org/def/dedl#process">process</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Decision">
+      <h3>Decision<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/dedl#Decision</p>
+      <div class="comment">
+         <span class="markdown">An outcome regarding an authorization request, e.g. Allow or Deny.</span>
+      </div>
+      <dl class="description">
+         <dt>has members</dt>
+         <dd>
+            <a href="#Allow" title="https://w3id.org/def/dedl#Allow">Allow</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Deny" title="https://w3id.org/def/dedl#Deny">Deny</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Entity">
+      <h3>Entity<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/dedl#Entity</p>
+      <div class="comment">
+         <span class="markdown">Any identifiable object within the data ecosystem, e.g. a device or digital resource.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#identity" title="https://w3id.org/def/dedl#identity">identity</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#policy" title="https://w3id.org/def/dedl#policy">policy</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#entity" title="https://w3id.org/def/dedl#entity">entity</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/def/didl#Identity">
+      <h3>Identity<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/didl#Identity</p>
+      <div class="comment">
+         <span class="markdown">A unique collection of attributes, credentials, or characteristics of an entity.</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#identity" title="https://w3id.org/def/dedl#identity">identity</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="Individual">
-      <h3>individual<sup class="type-c" title="class">c</sup>
+      <h3>Individual<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#Individual</p>
+      <div class="comment">
+         <span class="markdown">A subclass of Participant representing a legal person.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="https://w3id.org/def/dedl#Participant"
-               target="_blank"
-               title="https://w3id.org/def/dedl#Participant">participant</a>
+            <a href="#Participant" title="https://w3id.org/def/dedl#Participant">Participant</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="Organization">
-      <h3>organization<sup class="type-c" title="class">c</sup>
+      <h3>Organization<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#Organization</p>
+      <div class="comment">
+         <span class="markdown">A subclass of Participant representing a legal entity.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="https://w3id.org/def/dedl#Participant"
-               target="_blank"
-               title="https://w3id.org/def/dedl#Participant">participant</a>
+            <a href="#Participant" title="https://w3id.org/def/dedl#Participant">Participant</a>
             <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Participant">
+      <h3>Participant<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/dedl#Participant</p>
+      <div class="comment">
+         <span class="markdown">a stakeholder within the data ecosystem (either an Individual or Organization).</span>
+      </div>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Individual" title="https://w3id.org/def/dedl#Individual">Individual</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Organization" title="https://w3id.org/def/dedl#Organization">Organization</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#authenticator" title="https://w3id.org/def/dedl#authenticator">authenticator</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#authorizator" title="https://w3id.org/def/dedl#authorizator">authorizator</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#entity" title="https://w3id.org/def/dedl#entity">entity</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#participant" title="https://w3id.org/def/dedl#participant">participant</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Policy">
+      <h3>Policy<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/dedl#Policy</p>
+      <div class="comment">
+         <span class="markdown">A set of rules or guidelines that govern data usage, sharing, and access.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#accessControlModel" title="https://w3id.org/def/dedl#accessControlModel">accessControlModel</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#policyLanguage" title="https://w3id.org/def/dedl#policyLanguage">policyLanguage</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#policy" title="https://w3id.org/def/dedl#policy">policy</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PolicyLanguage">
+      <h3>Policy Language<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/dedl#PolicyLanguage</p>
+      <div class="comment">
+         <span class="markdown">A formal language for defining and expressing policies.</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#policyLanguage" title="https://w3id.org/def/dedl#policyLanguage">policyLanguage</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#ACP" title="https://w3id.org/def/dedl#ACP">ACP</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#MPEG-21" title="https://w3id.org/def/dedl#MPEG-21">MPEG-21</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#ODRL" title="https://w3id.org/def/dedl#ODRL">ODRL</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Ponder" title="https://w3id.org/def/dedl#Ponder">Ponder</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Rego" title="https://w3id.org/def/dedl#Rego">Rego</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#RightsML" title="https://w3id.org/def/dedl#RightsML">RightsML</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#XACMLPolicyLanguage" title="https://w3id.org/def/dedl#XACMLPolicyLanguage">XACML Policy Language</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Process">
+      <h3>Process<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/dedl#Process</p>
+      <div class="comment">
+         <span class="markdown">A series of operations or activities performed within the data ecosystem.</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#process" title="https://w3id.org/def/dedl#process">process</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#Exchange" title="https://w3id.org/def/dedl#Exchange">exchange</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Find" title="https://w3id.org/def/dedl#Find">find</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Offboarding" title="https://w3id.org/def/dedl#Offboarding">offboarding</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Onboarding" title="https://w3id.org/def/dedl#Onboarding">onboarding</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Publish" title="https://w3id.org/def/dedl#Publish">publish</a>
+            <sup class="type-ni" title="named individual">ni</sup>
          </dd>
       </dl>
    </div>
@@ -56,208 +537,174 @@ This section provides details for each class and property defined by DEDL.
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
       <li>
-         <a href="#accessControlModel" title="https://w3id.org/def/dedl#accessControlModel">
-            <span>access control model</span>
-         </a>
+         <a href="#accessControlModel" title="https://w3id.org/def/dedl#accessControlModel">accessControlModel</a>
       </li>
       <li>
-         <a href="#authenticationFactor" title="https://w3id.org/def/dedl#authenticationFactor">
-            <span>authentication factor</span>
-         </a>
+         <a href="#authenticationFactor" title="https://w3id.org/def/dedl#authenticationFactor">authenticationFactor</a>
       </li>
       <li>
-         <a href="#authenticationProcess" title="https://w3id.org/def/dedl#authenticationProcess">
-            <span>authentication process</span>
-         </a>
+         <a href="#authenticationProcess" title="https://w3id.org/def/dedl#authenticationProcess">authenticationProcess</a>
       </li>
       <li>
-         <a href="#authenticationProtocol" title="https://w3id.org/def/dedl#authenticationProtocol">
-            <span>authentication protocol</span>
-         </a>
+         <a href="#authenticationProtocol" title="https://w3id.org/def/dedl#authenticationProtocol">authenticationProtocol</a>
       </li>
       <li>
          <a href="#authenticationRiskContext"
-            title="https://w3id.org/def/dedl#authenticationRiskContext">
-            <span>authentication risk context</span>
-         </a>
+            title="https://w3id.org/def/dedl#authenticationRiskContext">authenticationRiskContext</a>
       </li>
       <li>
-         <a href="#authenticator" title="https://w3id.org/def/dedl#authenticator">
-            <span>authenticator</span>
-         </a>
+         <a href="#authenticator" title="https://w3id.org/def/dedl#authenticator">authenticator</a>
       </li>
       <li>
          <a href="#authorizationArchitecture"
-            title="https://w3id.org/def/dedl#authorizationArchitecture">
-            <span>authorization architecture</span>
-         </a>
+            title="https://w3id.org/def/dedl#authorizationArchitecture">authorizationArchitecture</a>
       </li>
       <li>
-         <a href="#authorizationProcess" title="https://w3id.org/def/dedl#authorizationProcess">
-            <span>authorization process</span>
-         </a>
+         <a href="#authorizationProcess" title="https://w3id.org/def/dedl#authorizationProcess">authorizationProcess</a>
       </li>
       <li>
-         <a href="#authorizator" title="https://w3id.org/def/dedl#authorizator">
-            <span>authorizator</span>
-         </a>
+         <a href="#authorizator" title="https://w3id.org/def/dedl#authorizator">authorizator</a>
       </li>
       <li>
-         <a href="#entity" title="https://w3id.org/def/dedl#entity">
-            <span>entity</span>
-         </a>
+         <a href="#entity" title="https://w3id.org/def/dedl#entity">entity</a>
       </li>
       <li>
-         <a href="#identity" title="https://w3id.org/def/dedl#identity">
-            <span>identity</span>
-         </a>
+         <a href="#identity" title="https://w3id.org/def/dedl#identity">identity</a>
       </li>
       <li>
-         <a href="#participant" title="https://w3id.org/def/dedl#participant">
-            <span>participant</span>
-         </a>
+         <a href="#participant" title="https://w3id.org/def/dedl#participant">participant</a>
       </li>
       <li>
-         <a href="#policy" title="https://w3id.org/def/dedl#policy">
-            <span>policy</span>
-         </a>
+         <a href="#policy" title="https://w3id.org/def/dedl#policy">policy</a>
       </li>
       <li>
-         <a href="#policyLanguage" title="https://w3id.org/def/dedl#policyLanguage">
-            <span>policy language</span>
-         </a>
+         <a href="#policyLanguage" title="https://w3id.org/def/dedl#policyLanguage">policyLanguage</a>
       </li>
       <li>
-         <a href="#process" title="https://w3id.org/def/dedl#process">
-            <span>process</span>
-         </a>
+         <a href="#process" title="https://w3id.org/def/dedl#process">process</a>
       </li>
    </ul>
    <div class="entity" id="accessControlModel">
-      <h3>access control model<sup class="type-op" title="object property">op</sup>
+      <h3>accessControlModel<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#accessControlModel</p>
+      <div class="comment">
+         <span class="markdown">Associates a Policy with its AccessControlModel to define and enforce resource access rules.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="https://w3id.org/def/dedl#Policy"
-                  target="_blank"
-                  title="https://w3id.org/def/dedl#Policy">policy</a>
+               <a href="#Policy" title="https://w3id.org/def/dedl#Policy">Policy</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="https://w3id.org/def/dedl#AccessControlModel"
-                  target="_blank"
-                  title="https://w3id.org/def/dedl#AccessControlModel">access control model</a>
+               <a href="#AccessControlModel" title="https://w3id.org/def/dedl#AccessControlModel">Access Control Model</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
    </div>
    <div class="entity" id="authenticationFactor">
-      <h3>authentication factor<sup class="type-op" title="object property">op</sup>
+      <h3>authenticationFactor<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#authenticationFactor</p>
+      <div class="comment">
+         <span class="markdown">Indicates the AuthenticationFactor that an Authenticator uses.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="https://w3id.org/def/dedl#Authenticator"
-                  target="_blank"
-                  title="https://w3id.org/def/dedl#Authenticator">authenticator</a>
+               <a href="#Authenticator" title="https://w3id.org/def/dedl#Authenticator">Authenticator</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="https://w3id.org/def/dedl#AuthenticationFactor"
-                  target="_blank"
-                  title="https://w3id.org/def/dedl#AuthenticationFactor">authentication factor</a>
+               <a href="#AuthenticationFactor" title="https://w3id.org/def/dedl#AuthenticationFactor">Authentication Factor</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
    </div>
    <div class="entity" id="authenticationProcess">
-      <h3>authentication process<sup class="type-op" title="object property">op</sup>
+      <h3>authenticationProcess<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#authenticationProcess</p>
+      <div class="comment">
+         <span class="markdown">Links an Authenticator to the AuthenticationProcess used for identity verification.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="https://w3id.org/def/dedl#Authenticator"
-                  target="_blank"
-                  title="https://w3id.org/def/dedl#Authenticator">authenticator</a>
+               <a href="#Authenticator" title="https://w3id.org/def/dedl#Authenticator">Authenticator</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="https://w3id.org/def/dedl#AuthenticationProcess"
-                  target="_blank"
-                  title="https://w3id.org/def/dedl#AuthenticationProcess">authentication process</a>
+               <a href="#AuthenticationProcess" title="https://w3id.org/def/dedl#AuthenticationProcess">Authentication Process</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
    </div>
    <div class="entity" id="authenticationProtocol">
-      <h3>authentication protocol<sup class="type-op" title="object property">op</sup>
+      <h3>authenticationProtocol<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#authenticationProtocol</p>
+      <div class="comment">
+         <span class="markdown">Specifies the AuthenticationProtocol an Authenticator follows.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="https://w3id.org/def/dedl#Authenticator"
-                  target="_blank"
-                  title="https://w3id.org/def/dedl#Authenticator">authenticator</a>
+               <a href="#Authenticator" title="https://w3id.org/def/dedl#Authenticator">Authenticator</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="https://w3id.org/def/dedl#AuthenticationProctol"
-                  target="_blank"
-                  title="https://w3id.org/def/dedl#AuthenticationProctol">authentication proctol</a>
+               <a href="#AuthenticationProtocol" title="https://w3id.org/def/dedl#AuthenticationProtocol">Authentication Protocol</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
    </div>
    <div class="entity" id="authenticationRiskContext">
-      <h3>authentication risk context<sup class="type-op" title="object property">op</sup>
+      <h3>authenticationRiskContext<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#authenticationRiskContext</p>
+      <div class="comment">
+         <span class="markdown">Associates an Authenticator with contextual factors that influence authentication risk.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="https://w3id.org/def/dedl#Authenticator"
-                  target="_blank"
-                  title="https://w3id.org/def/dedl#Authenticator">authenticator</a>
+               <a href="#Authenticator" title="https://w3id.org/def/dedl#Authenticator">Authenticator</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="https://w3id.org/def/dedl#AuthenticationRiskContext"
-                  target="_blank"
-                  title="https://w3id.org/def/dedl#AuthenticationRiskContext">authentication risk context</a>
+               <a href="#AuthenticationRiskContext"
+                  title="https://w3id.org/def/dedl#AuthenticationRiskContext">Authentication Risk Context</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -270,72 +717,70 @@ This section provides details for each class and property defined by DEDL.
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#authenticator</p>
+      <div class="comment">
+         <span class="markdown">Relates a Participant to an Authenticator performing authentication on their behalf.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="https://w3id.org/def/dedl#Participant"
-                  target="_blank"
-                  title="https://w3id.org/def/dedl#Participant">participant</a>
+               <a href="#Participant" title="https://w3id.org/def/dedl#Participant">Participant</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="https://w3id.org/def/dedl#Authenticator"
-                  target="_blank"
-                  title="https://w3id.org/def/dedl#Authenticator">authenticator</a>
+               <a href="#Authenticator" title="https://w3id.org/def/dedl#Authenticator">Authenticator</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
    </div>
    <div class="entity" id="authorizationArchitecture">
-      <h3>authorization architecture<sup class="type-op" title="object property">op</sup>
+      <h3>authorizationArchitecture<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#authorizationArchitecture</p>
+      <div class="comment">
+         <span class="markdown">Specifies the AuthorizationArchitecture used by an Authorizator.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="https://w3id.org/def/dedl#Authorizator"
-                  target="_blank"
-                  title="https://w3id.org/def/dedl#Authorizator">authorizator</a>
+               <a href="#Authorizator" title="https://w3id.org/def/dedl#Authorizator">Authorizator</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="https://w3id.org/def/dedl#AuthorizationArchitecture"
-                  target="_blank"
-                  title="https://w3id.org/def/dedl#AuthorizationArchitecture">authorization architecture</a>
+               <a href="#AuthorizationArchitecture"
+                  title="https://w3id.org/def/dedl#AuthorizationArchitecture">Authorization Architecture</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
    </div>
    <div class="entity" id="authorizationProcess">
-      <h3>authorization process<sup class="type-op" title="object property">op</sup>
+      <h3>authorizationProcess<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#authorizationProcess</p>
+      <div class="comment">
+         <span class="markdown">Indicates the AuthorizationProcess followed by an Authorizator.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="https://w3id.org/def/dedl#Authorizator"
-                  target="_blank"
-                  title="https://w3id.org/def/dedl#Authorizator">authorizator</a>
+               <a href="#Authorizator" title="https://w3id.org/def/dedl#Authorizator">Authorizator</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="https://w3id.org/def/dedl#AuthorizationProcess"
-                  target="_blank"
-                  title="https://w3id.org/def/dedl#AuthorizationProcess">authorization process</a>
+               <a href="#AuthorizationProcess" title="https://w3id.org/def/dedl#AuthorizationProcess">Authorization Process</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -348,20 +793,19 @@ This section provides details for each class and property defined by DEDL.
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#authorizator</p>
+      <div class="comment">
+         <span class="markdown">Declares a Participant to be an Authorizator responsible for enforcing authorization decisions.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="https://w3id.org/def/dedl#Participant"
-                  target="_blank"
-                  title="https://w3id.org/def/dedl#Participant">participant</a>
+               <a href="#Participant" title="https://w3id.org/def/dedl#Participant">Participant</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="https://w3id.org/def/dedl#Authorizator"
-                  target="_blank"
-                  title="https://w3id.org/def/dedl#Authorizator">authorizator</a>
+               <a href="#Authorizator" title="https://w3id.org/def/dedl#Authorizator">Authorizator</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -374,20 +818,19 @@ This section provides details for each class and property defined by DEDL.
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#entity</p>
+      <div class="comment">
+         <span class="markdown">Associates a Participant with a particular Entity in the data ecosystem.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="https://w3id.org/def/dedl#Participant"
-                  target="_blank"
-                  title="https://w3id.org/def/dedl#Participant">participant</a>
+               <a href="#Participant" title="https://w3id.org/def/dedl#Participant">Participant</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="https://w3id.org/def/dedl#Entity"
-                  target="_blank"
-                  title="https://w3id.org/def/dedl#Entity">entity</a>
+               <a href="#Entity" title="https://w3id.org/def/dedl#Entity">Entity</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -400,20 +843,19 @@ This section provides details for each class and property defined by DEDL.
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#identity</p>
+      <div class="comment">
+         <span class="markdown">Indicates the Identity belonging to an Entity.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="https://w3id.org/def/dedl#Entity"
-                  target="_blank"
-                  title="https://w3id.org/def/dedl#Entity">entity</a>
+               <a href="#Entity" title="https://w3id.org/def/dedl#Entity">Entity</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="https://w3id.org/def/didl#Identity"
-                  target="_blank"
-                  title="https://w3id.org/def/didl#Identity">identity</a>
+               <a href="#https://w3id.org/def/didl#Identity" title="https://w3id.org/def/didl#Identity">Identity</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -426,20 +868,19 @@ This section provides details for each class and property defined by DEDL.
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#participant</p>
+      <div class="comment">
+         <span class="markdown">Specifies a Participant within a DataEcosystem.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="https://w3id.org/def/dedl#DataEcosystem"
-                  target="_blank"
-                  title="https://w3id.org/def/dedl#DataEcosystem">data ecosystem</a>
+               <a href="#DataEcosystem" title="https://w3id.org/def/dedl#DataEcosystem">Data Ecosystem</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="https://w3id.org/def/dedl#Participant"
-                  target="_blank"
-                  title="https://w3id.org/def/dedl#Participant">participant</a>
+               <a href="#Participant" title="https://w3id.org/def/dedl#Participant">Participant</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -452,46 +893,44 @@ This section provides details for each class and property defined by DEDL.
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#policy</p>
+      <div class="comment">
+         <span class="markdown">Links an Entity to a Policy governing its usage or access rights.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="https://w3id.org/def/dedl#Entity"
-                  target="_blank"
-                  title="https://w3id.org/def/dedl#Entity">entity</a>
+               <a href="#Entity" title="https://w3id.org/def/dedl#Entity">Entity</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="https://w3id.org/def/dedl#Policy"
-                  target="_blank"
-                  title="https://w3id.org/def/dedl#Policy">policy</a>
+               <a href="#Policy" title="https://w3id.org/def/dedl#Policy">Policy</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
    </div>
    <div class="entity" id="policyLanguage">
-      <h3>policy language<sup class="type-op" title="object property">op</sup>
+      <h3>policyLanguage<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#policyLanguage</p>
+      <div class="comment">
+         <span class="markdown">Specifies the PolicyLanguage used to express or encode a Policy.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="https://w3id.org/def/dedl#Policy"
-                  target="_blank"
-                  title="https://w3id.org/def/dedl#Policy">policy</a>
+               <a href="#Policy" title="https://w3id.org/def/dedl#Policy">Policy</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="https://w3id.org/def/dedl#PolicyLanguage"
-                  target="_blank"
-                  title="https://w3id.org/def/dedl#PolicyLanguage">policy language</a>
+               <a href="#PolicyLanguage" title="https://w3id.org/def/dedl#PolicyLanguage">Policy Language</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -504,20 +943,19 @@ This section provides details for each class and property defined by DEDL.
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#process</p>
+      <div class="comment">
+         <span class="markdown">Associates a DataEcosystem with a particular Process.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="https://w3id.org/def/dedl#DataEcosystem"
-                  target="_blank"
-                  title="https://w3id.org/def/dedl#DataEcosystem">data ecosystem</a>
+               <a href="#DataEcosystem" title="https://w3id.org/def/dedl#DataEcosystem">Data Ecosystem</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="https://w3id.org/def/dedl#Process"
-                  target="_blank"
-                  title="https://w3id.org/def/dedl#Process">process</a>
+               <a href="#Process" title="https://w3id.org/def/dedl#Process">Process</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -529,817 +967,909 @@ This section provides details for each class and property defined by DEDL.
    <h3 id="namedindividuals" class="list">Named Individuals</h3>
    <ul class="hlist">
       <li>
-         <a href="#ABAC" title="https://w3id.org/def/dedl#ABAC">
-            <span>a b a c</span>
+         <a href="#ABAC" title="https://w3id.org/def/dedl#ABAC">ABAC</a>
+      </li>
+      <li>
+         <a href="#ACP" title="https://w3id.org/def/dedl#ACP">ACP</a>
+      </li>
+      <li>
+         <a href="#Allow" title="https://w3id.org/def/dedl#Allow">Allow</a>
+      </li>
+      <li>
+         <a href="#Behavior" title="https://w3id.org/def/dedl#Behavior">Behavior</a>
+      </li>
+      <li>
+         <a href="#CapBAC" title="https://w3id.org/def/dedl#CapBAC">CapBAC</a>
+      </li>
+      <li>
+         <a href="#Cryptography" title="https://w3id.org/def/dedl#Cryptography">Cryptography</a>
+      </li>
+      <li>
+         <a href="#DAC" title="https://w3id.org/def/dedl#DAC">DAC</a>
+      </li>
+      <li>
+         <a href="#Deny" title="https://w3id.org/def/dedl#Deny">Deny</a>
+      </li>
+      <li>
+         <a href="#Device" title="https://w3id.org/def/dedl#Device">Device</a>
+      </li>
+      <li>
+         <a href="#Exchange" title="https://w3id.org/def/dedl#Exchange">
+            <span>exchange</span>
          </a>
       </li>
       <li>
-         <a href="#Allow" title="https://w3id.org/def/dedl#Allow">
-            <span>allow</span>
+         <a href="#Find" title="https://w3id.org/def/dedl#Find">
+            <span>find</span>
          </a>
       </li>
       <li>
-         <a href="#Behavior" title="https://w3id.org/def/dedl#Behavior">
-            <span>behavior</span>
+         <a href="#Geolocation" title="https://w3id.org/def/dedl#Geolocation">Geolocation</a>
+      </li>
+      <li>
+         <a href="#HybridArchitecture" title="https://w3id.org/def/dedl#HybridArchitecture">Hybrid Architecture</a>
+      </li>
+      <li>
+         <a href="#Kerberos" title="https://w3id.org/def/dedl#Kerberos">Kerberos</a>
+      </li>
+      <li>
+         <a href="#LDAP" title="https://w3id.org/def/dedl#LDAP">LDAP</a>
+      </li>
+      <li>
+         <a href="#MAC" title="https://w3id.org/def/dedl#MAC">MAC</a>
+      </li>
+      <li>
+         <a href="#MPEG-21" title="https://w3id.org/def/dedl#MPEG-21">MPEG-21</a>
+      </li>
+      <li>
+         <a href="#MultiFactor" title="https://w3id.org/def/dedl#MultiFactor">MultiFactor</a>
+      </li>
+      <li>
+         <a href="#Negotiate" title="https://w3id.org/def/dedl#Negotiate">Negotiate</a>
+      </li>
+      <li>
+         <a href="#OBAC" title="https://w3id.org/def/dedl#OBAC">OBAC</a>
+      </li>
+      <li>
+         <a href="#ODRL" title="https://w3id.org/def/dedl#ODRL">ODRL</a>
+      </li>
+      <li>
+         <a href="#Offboarding" title="https://w3id.org/def/dedl#Offboarding">
+            <span>offboarding</span>
          </a>
       </li>
       <li>
-         <a href="#CapBAC" title="https://w3id.org/def/dedl#CapBAC">
-            <span>cap b a c</span>
+         <a href="#OIDC" title="https://w3id.org/def/dedl#OIDC">OIDC</a>
+      </li>
+      <li>
+         <a href="#Onboarding" title="https://w3id.org/def/dedl#Onboarding">
+            <span>onboarding</span>
          </a>
       </li>
       <li>
-         <a href="#Cryptography" title="https://w3id.org/def/dedl#Cryptography">
-            <span>cryptography</span>
-         </a>
+         <a href="#OneWay" title="https://w3id.org/def/dedl#OneWay">One Way</a>
       </li>
       <li>
-         <a href="#DAC" title="https://w3id.org/def/dedl#DAC">
-            <span>d a c</span>
-         </a>
-      </li>
-      <li>
-         <a href="#Deny" title="https://w3id.org/def/dedl#Deny">
-            <span>deny</span>
-         </a>
-      </li>
-      <li>
-         <a href="#Device" title="https://w3id.org/def/dedl#Device">
-            <span>device</span>
-         </a>
-      </li>
-      <li>
-         <a href="#Geolocation" title="https://w3id.org/def/dedl#Geolocation">
-            <span>geolocation</span>
-         </a>
-      </li>
-      <li>
-         <a href="#HybridArchitecture" title="https://w3id.org/def/dedl#HybridArchitecture">
-            <span>hybrid architecture</span>
-         </a>
-      </li>
-      <li>
-         <a href="#Kerberos" title="https://w3id.org/def/dedl#Kerberos">
-            <span>kerberos</span>
-         </a>
-      </li>
-      <li>
-         <a href="#LDAP" title="https://w3id.org/def/dedl#LDAP">
-            <span>l d a p</span>
-         </a>
-      </li>
-      <li>
-         <a href="#MAC" title="https://w3id.org/def/dedl#MAC">
-            <span>m a c</span>
-         </a>
-      </li>
-      <li>
-         <a href="#MPEG-21" title="https://w3id.org/def/dedl#MPEG-21">
-            <span>m p e g 21</span>
-         </a>
-      </li>
-      <li>
-         <a href="#MultiFactor" title="https://w3id.org/def/dedl#MultiFactor">
-            <span>multi factor</span>
-         </a>
-      </li>
-      <li>
-         <a href="#Negotiate" title="https://w3id.org/def/dedl#Negotiate">
-            <span>negotiate</span>
-         </a>
-      </li>
-      <li>
-         <a href="#OBAC" title="https://w3id.org/def/dedl#OBAC">
-            <span>o b a c</span>
-         </a>
-      </li>
-      <li>
-         <a href="#ODRL" title="https://w3id.org/def/dedl#ODRL">
-            <span>o d r l</span>
-         </a>
-      </li>
-      <li>
-         <a href="#OIDC" title="https://w3id.org/def/dedl#OIDC">
-            <span>o i d c</span>
-         </a>
-      </li>
-      <li>
-         <a href="#OneWay" title="https://w3id.org/def/dedl#OneWay">
-            <span>one way</span>
-         </a>
-      </li>
-      <li>
-         <a href="#OrBAC" title="https://w3id.org/def/dedl#OrBAC">
-            <span>or b a c</span>
-         </a>
+         <a href="#OrBAC" title="https://w3id.org/def/dedl#OrBAC">OrBAC</a>
       </li>
       <li>
          <a href="#PolicyBasedArchitecture"
-            title="https://w3id.org/def/dedl#PolicyBasedArchitecture">
-            <span>policy based architecture</span>
+            title="https://w3id.org/def/dedl#PolicyBasedArchitecture">Policy-based Architecture</a>
+      </li>
+      <li>
+         <a href="#Poll" title="https://w3id.org/def/dedl#Poll">Poll</a>
+      </li>
+      <li>
+         <a href="#Ponder" title="https://w3id.org/def/dedl#Ponder">Ponder</a>
+      </li>
+      <li>
+         <a href="#Publish" title="https://w3id.org/def/dedl#Publish">
+            <span>publish</span>
          </a>
       </li>
       <li>
-         <a href="#Poll" title="https://w3id.org/def/dedl#Poll">
-            <span>poll</span>
-         </a>
+         <a href="#Push" title="https://w3id.org/def/dedl#Push">Push</a>
       </li>
       <li>
-         <a href="#Ponder" title="https://w3id.org/def/dedl#Ponder">
-            <span>ponder</span>
-         </a>
+         <a href="#RBAC" title="https://w3id.org/def/dedl#RBAC">RBAC</a>
       </li>
       <li>
-         <a href="#Push" title="https://w3id.org/def/dedl#Push">
-            <span>push</span>
-         </a>
+         <a href="#Rego" title="https://w3id.org/def/dedl#Rego">Rego</a>
       </li>
       <li>
-         <a href="#RBAC" title="https://w3id.org/def/dedl#RBAC">
-            <span>r b a c</span>
-         </a>
+         <a href="#RightsML" title="https://w3id.org/def/dedl#RightsML">RightsML</a>
       </li>
       <li>
-         <a href="#Rego" title="https://w3id.org/def/dedl#Rego">
-            <span>rego</span>
-         </a>
+         <a href="#SAML_2.0" title="https://w3id.org/def/dedl#SAML_2.0">SAML 2.0</a>
       </li>
       <li>
-         <a href="#RightsML" title="https://w3id.org/def/dedl#RightsML">
-            <span>rights m l</span>
-         </a>
+         <a href="#Signature" title="https://w3id.org/def/dedl#Signature">Signature</a>
       </li>
       <li>
-         <a href="#SAML_2.0" title="https://w3id.org/def/dedl#SAML_2.0">
-            <span>s a m l 2.0</span>
-         </a>
+         <a href="#SingleFactor" title="https://w3id.org/def/dedl#SingleFactor">Single Factor</a>
       </li>
       <li>
-         <a href="#Signature" title="https://w3id.org/def/dedl#Signature">
-            <span>signature</span>
-         </a>
+         <a href="#ThreeWay" title="https://w3id.org/def/dedl#ThreeWay">Three Way</a>
       </li>
       <li>
-         <a href="#SingleFactor" title="https://w3id.org/def/dedl#SingleFactor">
-            <span>single factor</span>
-         </a>
+         <a href="#Time-based" title="https://w3id.org/def/dedl#Time-based">Time-based</a>
       </li>
       <li>
-         <a href="#ThreeWay" title="https://w3id.org/def/dedl#ThreeWay">
-            <span>three way</span>
-         </a>
+         <a href="#TokenBasedArchitecture"
+            title="https://w3id.org/def/dedl#TokenBasedArchitecture">Token-based Architecture</a>
       </li>
       <li>
-         <a href="#Time-based" title="https://w3id.org/def/dedl#Time-based">
-            <span>time based</span>
-         </a>
+         <a href="#TwoWay" title="https://w3id.org/def/dedl#TwoWay">Two Way</a>
       </li>
       <li>
-         <a href="#TokenBasedArchitecture" title="https://w3id.org/def/dedl#TokenBasedArchitecture">
-            <span>token based architecture</span>
-         </a>
+         <a href="#WebAuth" title="https://w3id.org/def/dedl#WebAuth">WebAuth</a>
       </li>
       <li>
-         <a href="#TwoWay" title="https://w3id.org/def/dedl#TwoWay">
-            <span>two way</span>
-         </a>
-      </li>
-      <li>
-         <a href="#WebAuth" title="https://w3id.org/def/dedl#WebAuth">
-            <span>web auth</span>
-         </a>
-      </li>
-      <li>
-         <a href="#XACMLPolicyLanguage" title="https://w3id.org/def/dedl#XACMLPolicyLanguage">
-            <span>x a c m l policy language</span>
-         </a>
+         <a href="#XACMLPolicyLanguage" title="https://w3id.org/def/dedl#XACMLPolicyLanguage">XACML Policy Language</a>
       </li>
    </ul>
    <div class="entity" id="ABAC">
-      <h3>a b a c<sup class="type-ni" title="named individual">ni</sup>
+      <h3>ABAC<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#ABAC</p>
+      <div class="comment">
+         <span class="markdown">Attribute-based Access Control model, relying on attributes to define permissions.</span>
+      </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="https://w3id.org/def/dedl#AccessControlModel"
-               target="_blank"
-               title="https://w3id.org/def/dedl#AccessControlModel">access control model</a>
+            <a href="#AccessControlModel" title="https://w3id.org/def/dedl#AccessControlModel">Access Control Model</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ACP">
+      <h3>ACP<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/dedl#ACP</p>
+      <div class="comment">
+         <span class="markdown">Access control policy language (ACP), a particular set of grammar, syntax rules (logical and mathematical), and operators which provides an abstraction-layer for access control policy specifications, see https://solid.github.io/authorization-panel/acp-specification/</span>
+      </div>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#PolicyLanguage" title="https://w3id.org/def/dedl#PolicyLanguage">Policy Language</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="Allow">
-      <h3>allow<sup class="type-ni" title="named individual">ni</sup>
+      <h3>Allow<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#Allow</p>
+      <div class="comment">
+         <span class="markdown">A Decision indicating that access is permitted.</span>
+      </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="https://w3id.org/def/dedl#Decision"
-               target="_blank"
-               title="https://w3id.org/def/dedl#Decision">decision</a>
+            <a href="#Decision" title="https://w3id.org/def/dedl#Decision">Decision</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="Behavior">
-      <h3>behavior<sup class="type-ni" title="named individual">ni</sup>
+      <h3>Behavior<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#Behavior</p>
+      <div class="comment">
+         <span class="markdown">A context factor reflecting user behavioral patterns (e.g., keystroke dynamics).</span>
+      </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="https://w3id.org/def/dedl#AuthenticationRiskContext"
-               target="_blank"
-               title="https://w3id.org/def/dedl#AuthenticationRiskContext">authentication risk context</a>
+            <a href="#AuthenticationRiskContext"
+               title="https://w3id.org/def/dedl#AuthenticationRiskContext">Authentication Risk Context</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="CapBAC">
-      <h3>cap b a c<sup class="type-ni" title="named individual">ni</sup>
+      <h3>CapBAC<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#CapBAC</p>
+      <div class="comment">
+         <span class="markdown">Capability-based Access Control relying on tokens or 'capabilities' to grant permissions.</span>
+      </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="https://w3id.org/def/dedl#AccessControlModel"
-               target="_blank"
-               title="https://w3id.org/def/dedl#AccessControlModel">access control model</a>
+            <a href="#AccessControlModel" title="https://w3id.org/def/dedl#AccessControlModel">Access Control Model</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="Cryptography">
-      <h3>cryptography<sup class="type-ni" title="named individual">ni</sup>
+      <h3>Cryptography<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#Cryptography</p>
+      <div class="comment">
+         <span class="markdown">An authentication protocol leveraging cryptographic techniques to prove identity.</span>
+      </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="https://w3id.org/def/dedl#AuthenticationProctol"
-               target="_blank"
-               title="https://w3id.org/def/dedl#AuthenticationProctol">authentication proctol</a>
+            <a href="#AuthenticationProtocol" title="https://w3id.org/def/dedl#AuthenticationProtocol">Authentication Protocol</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="DAC">
-      <h3>d a c<sup class="type-ni" title="named individual">ni</sup>
+      <h3>DAC<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#DAC</p>
+      <div class="comment">
+         <span class="markdown">Discretionary Access Control, where resource owners grant or deny permissions.</span>
+      </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="https://w3id.org/def/dedl#AccessControlModel"
-               target="_blank"
-               title="https://w3id.org/def/dedl#AccessControlModel">access control model</a>
+            <a href="#AccessControlModel" title="https://w3id.org/def/dedl#AccessControlModel">Access Control Model</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="Deny">
-      <h3>deny<sup class="type-ni" title="named individual">ni</sup>
+      <h3>Deny<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#Deny</p>
+      <div class="comment">
+         <span class="markdown">A Decision indicating that access is refused.</span>
+      </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="https://w3id.org/def/dedl#Decision"
-               target="_blank"
-               title="https://w3id.org/def/dedl#Decision">decision</a>
+            <a href="#Decision" title="https://w3id.org/def/dedl#Decision">Decision</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="Device">
-      <h3>device<sup class="type-ni" title="named individual">ni</sup>
+      <h3>Device<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#Device</p>
+      <div class="comment">
+         <span class="markdown">A factor in the authentication risk context indicating the device used for login.</span>
+      </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="https://w3id.org/def/dedl#AuthenticationRiskContext"
-               target="_blank"
-               title="https://w3id.org/def/dedl#AuthenticationRiskContext">authentication risk context</a>
+            <a href="#AuthenticationRiskContext"
+               title="https://w3id.org/def/dedl#AuthenticationRiskContext">Authentication Risk Context</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Exchange">
+      <h3>exchange<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/dedl#Exchange</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Process" title="https://w3id.org/def/dedl#Process">Process</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Find">
+      <h3>find<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/dedl#Find</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Process" title="https://w3id.org/def/dedl#Process">Process</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="Geolocation">
-      <h3>geolocation<sup class="type-ni" title="named individual">ni</sup>
+      <h3>Geolocation<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#Geolocation</p>
+      <div class="comment">
+         <span class="markdown">A factor in the authentication risk context representing physical or network location.</span>
+      </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="https://w3id.org/def/dedl#AuthenticationRiskContext"
-               target="_blank"
-               title="https://w3id.org/def/dedl#AuthenticationRiskContext">authentication risk context</a>
+            <a href="#AuthenticationRiskContext"
+               title="https://w3id.org/def/dedl#AuthenticationRiskContext">Authentication Risk Context</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="HybridArchitecture">
-      <h3>hybrid architecture<sup class="type-ni" title="named individual">ni</sup>
+      <h3>Hybrid Architecture<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#HybridArchitecture</p>
+      <div class="comment">
+         <span class="markdown">An AuthorizationArchitecture combining policy-based and token-based architecture</span>
+      </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="https://w3id.org/def/dedl#AuthorizationArchitecture"
-               target="_blank"
-               title="https://w3id.org/def/dedl#AuthorizationArchitecture">authorization architecture</a>
+            <a href="#AuthorizationArchitecture"
+               title="https://w3id.org/def/dedl#AuthorizationArchitecture">Authorization Architecture</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="Kerberos">
-      <h3>kerberos<sup class="type-ni" title="named individual">ni</sup>
+      <h3>Kerberos<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#Kerberos</p>
+      <div class="comment">
+         <span class="markdown">A protocol using a trusted third-party ticket-granting service for authentication.</span>
+      </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="https://w3id.org/def/dedl#AuthenticationProctol"
-               target="_blank"
-               title="https://w3id.org/def/dedl#AuthenticationProctol">authentication proctol</a>
+            <a href="#AuthenticationProtocol" title="https://w3id.org/def/dedl#AuthenticationProtocol">Authentication Protocol</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="LDAP">
-      <h3>l d a p<sup class="type-ni" title="named individual">ni</sup>
+      <h3>LDAP<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#LDAP</p>
+      <div class="comment">
+         <span class="markdown">Lightweight Directory Access Protocol, often used to manage authentication data in directories.</span>
+      </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="https://w3id.org/def/dedl#AuthenticationProctol"
-               target="_blank"
-               title="https://w3id.org/def/dedl#AuthenticationProctol">authentication proctol</a>
+            <a href="#AuthenticationProtocol" title="https://w3id.org/def/dedl#AuthenticationProtocol">Authentication Protocol</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="MAC">
-      <h3>m a c<sup class="type-ni" title="named individual">ni</sup>
+      <h3>MAC<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#MAC</p>
+      <div class="comment">
+         <span class="markdown">Mandatory Access Control, where policies are enforced by a central authority.</span>
+      </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="https://w3id.org/def/dedl#AccessControlModel"
-               target="_blank"
-               title="https://w3id.org/def/dedl#AccessControlModel">access control model</a>
+            <a href="#AccessControlModel" title="https://w3id.org/def/dedl#AccessControlModel">Access Control Model</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="MPEG-21">
-      <h3>m p e g 21<sup class="type-ni" title="named individual">ni</sup>
+      <h3>MPEG-21<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#MPEG-21</p>
+      <div class="comment">
+         <span class="markdown">A digital rights management and usage rights framework which can serve as a policy language.</span>
+      </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="https://w3id.org/def/dedl#PolicyLanguage"
-               target="_blank"
-               title="https://w3id.org/def/dedl#PolicyLanguage">policy language</a>
+            <a href="#PolicyLanguage" title="https://w3id.org/def/dedl#PolicyLanguage">Policy Language</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="MultiFactor">
-      <h3>multi factor<sup class="type-ni" title="named individual">ni</sup>
+      <h3>MultiFactor<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#MultiFactor</p>
+      <div class="comment">
+         <span class="markdown">An authentication factor requiring two or more independent credentials.</span>
+      </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="https://w3id.org/def/dedl#AuthenticationFactor"
-               target="_blank"
-               title="https://w3id.org/def/dedl#AuthenticationFactor">authentication factor</a>
+            <a href="#AuthenticationFactor" title="https://w3id.org/def/dedl#AuthenticationFactor">Authentication Factor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="Negotiate">
-      <h3>negotiate<sup class="type-ni" title="named individual">ni</sup>
+      <h3>Negotiate<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#Negotiate</p>
+      <div class="comment">
+         <span class="markdown">An authorization process involving negotiation or exchange of data before deciding access.</span>
+      </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="https://w3id.org/def/dedl#AuthorizationProcess"
-               target="_blank"
-               title="https://w3id.org/def/dedl#AuthorizationProcess">authorization process</a>
+            <a href="#AuthorizationProcess" title="https://w3id.org/def/dedl#AuthorizationProcess">Authorization Process</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="OBAC">
-      <h3>o b a c<sup class="type-ni" title="named individual">ni</sup>
+      <h3>OBAC<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#OBAC</p>
+      <div class="comment">
+         <span class="markdown">Ontology-based Access Control focusing on contextual policy enforcement</span>
+      </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="https://w3id.org/def/dedl#AccessControlModel"
-               target="_blank"
-               title="https://w3id.org/def/dedl#AccessControlModel">access control model</a>
+            <a href="#AccessControlModel" title="https://w3id.org/def/dedl#AccessControlModel">Access Control Model</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="ODRL">
-      <h3>o d r l<sup class="type-ni" title="named individual">ni</sup>
+      <h3>ODRL<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#ODRL</p>
+      <div class="comment">
+         <span class="markdown">Open Digital Rights Language, commonly used to specify rights, constraints, and obligations.</span>
+      </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="https://w3id.org/def/dedl#PolicyLanguage"
-               target="_blank"
-               title="https://w3id.org/def/dedl#PolicyLanguage">policy language</a>
+            <a href="#PolicyLanguage" title="https://w3id.org/def/dedl#PolicyLanguage">Policy Language</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Offboarding">
+      <h3>offboarding<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/dedl#Offboarding</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Process" title="https://w3id.org/def/dedl#Process">Process</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="OIDC">
-      <h3>o i d c<sup class="type-ni" title="named individual">ni</sup>
+      <h3>OIDC<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#OIDC</p>
+      <div class="comment">
+         <span class="markdown">OpenID Connect, a simple identity layer built on OAuth 2.0 used for single sign-on.</span>
+      </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="https://w3id.org/def/dedl#AuthenticationProctol"
-               target="_blank"
-               title="https://w3id.org/def/dedl#AuthenticationProctol">authentication proctol</a>
+            <a href="#AuthenticationProtocol" title="https://w3id.org/def/dedl#AuthenticationProtocol">Authentication Protocol</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Onboarding">
+      <h3>onboarding<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/dedl#Onboarding</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Process" title="https://w3id.org/def/dedl#Process">Process</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="OneWay">
-      <h3>one way<sup class="type-ni" title="named individual">ni</sup>
+      <h3>One Way<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#OneWay</p>
+      <div class="comment">
+         <span class="markdown">A one-direction authentication process, typically from a client to a server.</span>
+      </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="https://w3id.org/def/dedl#AuthenticationProcess"
-               target="_blank"
-               title="https://w3id.org/def/dedl#AuthenticationProcess">authentication process</a>
+            <a href="#AuthenticationProcess" title="https://w3id.org/def/dedl#AuthenticationProcess">Authentication Process</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="OrBAC">
-      <h3>or b a c<sup class="type-ni" title="named individual">ni</sup>
+      <h3>OrBAC<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#OrBAC</p>
+      <div class="comment">
+         <span class="markdown">Organization-based Access Control, focusing on roles and contexts within an organization.</span>
+      </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="https://w3id.org/def/dedl#AccessControlModel"
-               target="_blank"
-               title="https://w3id.org/def/dedl#AccessControlModel">access control model</a>
+            <a href="#AccessControlModel" title="https://w3id.org/def/dedl#AccessControlModel">Access Control Model</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="PolicyBasedArchitecture">
-      <h3>policy based architecture<sup class="type-ni" title="named individual">ni</sup>
+      <h3>Policy-based Architecture<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#PolicyBasedArchitecture</p>
+      <div class="comment">
+         <span class="markdown">An AuthorizationArchitecture where authorization relies on evaluating formalized policies.</span>
+      </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="https://w3id.org/def/dedl#AuthorizationArchitecture"
-               target="_blank"
-               title="https://w3id.org/def/dedl#AuthorizationArchitecture">authorization architecture</a>
+            <a href="#AuthorizationArchitecture"
+               title="https://w3id.org/def/dedl#AuthorizationArchitecture">Authorization Architecture</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="Poll">
-      <h3>poll<sup class="type-ni" title="named individual">ni</sup>
+      <h3>Poll<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#Poll</p>
+      <div class="comment">
+         <span class="markdown">An authorization process where a client periodically checks the server for an access decision.</span>
+      </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="https://w3id.org/def/dedl#AuthorizationProcess"
-               target="_blank"
-               title="https://w3id.org/def/dedl#AuthorizationProcess">authorization process</a>
+            <a href="#AuthorizationProcess" title="https://w3id.org/def/dedl#AuthorizationProcess">Authorization Process</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="Ponder">
-      <h3>ponder<sup class="type-ni" title="named individual">ni</sup>
+      <h3>Ponder<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#Ponder</p>
+      <div class="comment">
+         <span class="markdown">A policy specification language for security and management in distributed systems.</span>
+      </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="https://w3id.org/def/dedl#PolicyLanguage"
-               target="_blank"
-               title="https://w3id.org/def/dedl#PolicyLanguage">policy language</a>
+            <a href="#PolicyLanguage" title="https://w3id.org/def/dedl#PolicyLanguage">Policy Language</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Publish">
+      <h3>publish<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/dedl#Publish</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Process" title="https://w3id.org/def/dedl#Process">Process</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="Push">
-      <h3>push<sup class="type-ni" title="named individual">ni</sup>
+      <h3>Push<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#Push</p>
+      <div class="comment">
+         <span class="markdown">An authorization process where the server proactively notifies the client about decisions.</span>
+      </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="https://w3id.org/def/dedl#AuthorizationProcess"
-               target="_blank"
-               title="https://w3id.org/def/dedl#AuthorizationProcess">authorization process</a>
+            <a href="#AuthorizationProcess" title="https://w3id.org/def/dedl#AuthorizationProcess">Authorization Process</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="RBAC">
-      <h3>r b a c<sup class="type-ni" title="named individual">ni</sup>
+      <h3>RBAC<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#RBAC</p>
+      <div class="comment">
+         <span class="markdown">Role-based Access Control, assigning permissions to roles which are then assigned to users.</span>
+      </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="https://w3id.org/def/dedl#AccessControlModel"
-               target="_blank"
-               title="https://w3id.org/def/dedl#AccessControlModel">access control model</a>
+            <a href="#AccessControlModel" title="https://w3id.org/def/dedl#AccessControlModel">Access Control Model</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="Rego">
-      <h3>rego<sup class="type-ni" title="named individual">ni</sup>
+      <h3>Rego<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#Rego</p>
+      <div class="comment">
+         <span class="markdown">A declarative policy language used with Open Policy Agent (OPA) to define fine-grained permissions.</span>
+      </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="https://w3id.org/def/dedl#PolicyLanguage"
-               target="_blank"
-               title="https://w3id.org/def/dedl#PolicyLanguage">policy language</a>
+            <a href="#PolicyLanguage" title="https://w3id.org/def/dedl#PolicyLanguage">Policy Language</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="RightsML">
-      <h3>rights m l<sup class="type-ni" title="named individual">ni</sup>
+      <h3>RightsML<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#RightsML</p>
+      <div class="comment">
+         <span class="markdown">An ODRL-based language for expressing rights and usage constraints, common in news/media.</span>
+      </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="https://w3id.org/def/dedl#PolicyLanguage"
-               target="_blank"
-               title="https://w3id.org/def/dedl#PolicyLanguage">policy language</a>
+            <a href="#PolicyLanguage" title="https://w3id.org/def/dedl#PolicyLanguage">Policy Language</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="SAML_2.0">
-      <h3>s a m l 2.0<sup class="type-ni" title="named individual">ni</sup>
+      <h3>SAML 2.0<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#SAML_2.0</p>
+      <div class="comment">
+         <span class="markdown">Security Assertion Markup Language (2.0), exchanging authentication and authorization data.</span>
+      </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="https://w3id.org/def/dedl#AuthenticationProctol"
-               target="_blank"
-               title="https://w3id.org/def/dedl#AuthenticationProctol">authentication proctol</a>
+            <a href="#AuthenticationProtocol" title="https://w3id.org/def/dedl#AuthenticationProtocol">Authentication Protocol</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="Signature">
-      <h3>signature<sup class="type-ni" title="named individual">ni</sup>
+      <h3>Signature<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#Signature</p>
+      <div class="comment">
+         <span class="markdown">An authentication protocol relying on digital signatures for verification.</span>
+      </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="https://w3id.org/def/dedl#AuthenticationProctol"
-               target="_blank"
-               title="https://w3id.org/def/dedl#AuthenticationProctol">authentication proctol</a>
+            <a href="#AuthenticationProtocol" title="https://w3id.org/def/dedl#AuthenticationProtocol">Authentication Protocol</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="SingleFactor">
-      <h3>single factor<sup class="type-ni" title="named individual">ni</sup>
+      <h3>Single Factor<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#SingleFactor</p>
+      <div class="comment">
+         <span class="markdown">An authentication factor using only one method of verification (e.g., a single password).</span>
+      </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="https://w3id.org/def/dedl#AuthenticationFactor"
-               target="_blank"
-               title="https://w3id.org/def/dedl#AuthenticationFactor">authentication factor</a>
+            <a href="#AuthenticationFactor" title="https://w3id.org/def/dedl#AuthenticationFactor">Authentication Factor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="ThreeWay">
-      <h3>three way<sup class="type-ni" title="named individual">ni</sup>
+      <h3>Three Way<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#ThreeWay</p>
+      <div class="comment">
+         <span class="markdown">An authentication process involving a three-part handshake or three-step verification.</span>
+      </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="https://w3id.org/def/dedl#AuthenticationProcess"
-               target="_blank"
-               title="https://w3id.org/def/dedl#AuthenticationProcess">authentication process</a>
+            <a href="#AuthenticationProcess" title="https://w3id.org/def/dedl#AuthenticationProcess">Authentication Process</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="Time-based">
-      <h3>time based<sup class="type-ni" title="named individual">ni</sup>
+      <h3>Time-based<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#Time-based</p>
+      <div class="comment">
+         <span class="markdown">A context factor referencing time-sensitive credentials or restrictions (e.g., OTPs).</span>
+      </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="https://w3id.org/def/dedl#AuthenticationRiskContext"
-               target="_blank"
-               title="https://w3id.org/def/dedl#AuthenticationRiskContext">authentication risk context</a>
+            <a href="#AuthenticationRiskContext"
+               title="https://w3id.org/def/dedl#AuthenticationRiskContext">Authentication Risk Context</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="TokenBasedArchitecture">
-      <h3>token based architecture<sup class="type-ni" title="named individual">ni</sup>
+      <h3>Token-based Architecture<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#TokenBasedArchitecture</p>
+      <div class="comment">
+         <span class="markdown">An authorization architecture using tokens (e.g., JWT)</span>
+      </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="https://w3id.org/def/dedl#AuthorizationArchitecture"
-               target="_blank"
-               title="https://w3id.org/def/dedl#AuthorizationArchitecture">authorization architecture</a>
+            <a href="#AuthorizationArchitecture"
+               title="https://w3id.org/def/dedl#AuthorizationArchitecture">Authorization Architecture</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="TwoWay">
-      <h3>two way<sup class="type-ni" title="named individual">ni</sup>
+      <h3>Two Way<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#TwoWay</p>
+      <div class="comment">
+         <span class="markdown">A mutual authentication process where both parties verify each other's identity.</span>
+      </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="https://w3id.org/def/dedl#AuthenticationProcess"
-               target="_blank"
-               title="https://w3id.org/def/dedl#AuthenticationProcess">authentication process</a>
+            <a href="#AuthenticationProcess" title="https://w3id.org/def/dedl#AuthenticationProcess">Authentication Process</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="WebAuth">
-      <h3>web auth<sup class="type-ni" title="named individual">ni</sup>
+      <h3>WebAuth<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#WebAuth</p>
+      <div class="comment">
+         <span class="markdown">A web-based authentication protocol, encompassing flows like OAuth, SAML, or WebAuthn.</span>
+      </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="https://w3id.org/def/dedl#AuthenticationProctol"
-               target="_blank"
-               title="https://w3id.org/def/dedl#AuthenticationProctol">authentication proctol</a>
+            <a href="#AuthenticationProtocol" title="https://w3id.org/def/dedl#AuthenticationProtocol">Authentication Protocol</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="XACMLPolicyLanguage">
-      <h3>x a c m l policy language<sup class="type-ni" title="named individual">ni</sup>
+      <h3>XACML Policy Language<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dedl#XACMLPolicyLanguage</p>
+      <div class="comment">
+         <span class="markdown">An OASIS standard policy language for defining access control rules (XACML framework).</span>
+      </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="https://w3id.org/def/dedl#PolicyLanguage"
-               target="_blank"
-               title="https://w3id.org/def/dedl#PolicyLanguage">policy language</a>
+            <a href="#PolicyLanguage" title="https://w3id.org/def/dedl#PolicyLanguage">Policy Language</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
