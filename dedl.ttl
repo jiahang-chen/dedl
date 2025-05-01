@@ -1,0 +1,418 @@
+@prefix : <https://w3id.org/def/dedl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dedl: <https://w3id.org/def/dedl#> .
+@prefix didl: <https://w3id.org/def/didl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <https://w3id.org/def/dedl> .
+
+<https://w3id.org/def/dedl> rdf:type owl:Ontology ;
+                             dc:description "The Data Ecosystem Description Language (DEDL) is an abstract language to describe concepts of data ecosystems, in which different participants (i.e., organizations and individuals) share data as the primary aim."@en ;
+                             dc:title "DEDL Vocabulary & Expression 0.1"@en ;
+                             dcterms:creator "Jiahang Chen" ;
+                             rdfs:comment "This is a vocabulary for DEDL version 0.1"@en ;
+                             rdfs:label "DEDL"@en ;
+                             owl:versionInfo 0.1 .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/description
+dc:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+dc:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/abstract
+dcterms:abstract rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+dcterms:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/def/dedl#accessControlModel
+dedl:accessControlModel rdf:type owl:ObjectProperty ;
+                        rdfs:domain dedl:Policy ;
+                        rdfs:range dedl:AccessControlModel .
+
+
+###  https://w3id.org/def/dedl#authenticationFactor
+dedl:authenticationFactor rdf:type owl:ObjectProperty ;
+                          rdfs:domain dedl:Authenticator ;
+                          rdfs:range dedl:AuthenticationFactor .
+
+
+###  https://w3id.org/def/dedl#authenticationProcess
+dedl:authenticationProcess rdf:type owl:ObjectProperty ;
+                           rdfs:domain dedl:Authenticator ;
+                           rdfs:range dedl:AuthenticationProcess .
+
+
+###  https://w3id.org/def/dedl#authenticationProtocol
+dedl:authenticationProtocol rdf:type owl:ObjectProperty ;
+                            rdfs:domain dedl:Authenticator ;
+                            rdfs:range dedl:AuthenticationProctol .
+
+
+###  https://w3id.org/def/dedl#authenticationRiskContext
+dedl:authenticationRiskContext rdf:type owl:ObjectProperty ;
+                               rdfs:domain dedl:Authenticator ;
+                               rdfs:range dedl:AuthenticationRiskContext .
+
+
+###  https://w3id.org/def/dedl#authenticator
+dedl:authenticator rdf:type owl:ObjectProperty ;
+                   rdfs:domain dedl:Participant ;
+                   rdfs:range dedl:Authenticator .
+
+
+###  https://w3id.org/def/dedl#authorizationArchitecture
+dedl:authorizationArchitecture rdf:type owl:ObjectProperty ;
+                               rdfs:domain dedl:Authorizator ;
+                               rdfs:range dedl:AuthorizationArchitecture .
+
+
+###  https://w3id.org/def/dedl#authorizationProcess
+dedl:authorizationProcess rdf:type owl:ObjectProperty ;
+                          rdfs:domain dedl:Authorizator ;
+                          rdfs:range dedl:AuthorizationProcess .
+
+
+###  https://w3id.org/def/dedl#authorizator
+dedl:authorizator rdf:type owl:ObjectProperty ;
+                  rdfs:domain dedl:Participant ;
+                  rdfs:range dedl:Authorizator .
+
+
+###  https://w3id.org/def/dedl#entity
+dedl:entity rdf:type owl:ObjectProperty ;
+            rdfs:domain dedl:Participant ;
+            rdfs:range dedl:Entity .
+
+
+###  https://w3id.org/def/dedl#identity
+dedl:identity rdf:type owl:ObjectProperty ;
+              rdfs:domain dedl:Entity ;
+              rdfs:range didl:Identity .
+
+
+###  https://w3id.org/def/dedl#participant
+dedl:participant rdf:type owl:ObjectProperty ;
+                 rdfs:domain dedl:DataEcosystem ;
+                 rdfs:range dedl:Participant .
+
+
+###  https://w3id.org/def/dedl#policy
+dedl:policy rdf:type owl:ObjectProperty ;
+            rdfs:domain dedl:Entity ;
+            rdfs:range dedl:Policy .
+
+
+###  https://w3id.org/def/dedl#policyLanguage
+dedl:policyLanguage rdf:type owl:ObjectProperty ;
+                    rdfs:domain dedl:Policy ;
+                    rdfs:range dedl:PolicyLanguage .
+
+
+###  https://w3id.org/def/dedl#process
+dedl:process rdf:type owl:ObjectProperty ;
+             rdfs:domain dedl:DataEcosystem ;
+             rdfs:range dedl:Process .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/def/dedl#AccessControlModel
+dedl:AccessControlModel rdf:type owl:Class .
+
+
+###  https://w3id.org/def/dedl#AuthenticationFactor
+dedl:AuthenticationFactor rdf:type owl:Class .
+
+
+###  https://w3id.org/def/dedl#AuthenticationProcess
+dedl:AuthenticationProcess rdf:type owl:Class .
+
+
+###  https://w3id.org/def/dedl#AuthenticationProctol
+dedl:AuthenticationProctol rdf:type owl:Class .
+
+
+###  https://w3id.org/def/dedl#AuthenticationRiskContext
+dedl:AuthenticationRiskContext rdf:type owl:Class .
+
+
+###  https://w3id.org/def/dedl#Authenticator
+dedl:Authenticator rdf:type owl:Class .
+
+
+###  https://w3id.org/def/dedl#AuthorizationArchitecture
+dedl:AuthorizationArchitecture rdf:type owl:Class .
+
+
+###  https://w3id.org/def/dedl#AuthorizationProcess
+dedl:AuthorizationProcess rdf:type owl:Class .
+
+
+###  https://w3id.org/def/dedl#Authorizator
+dedl:Authorizator rdf:type owl:Class .
+
+
+###  https://w3id.org/def/dedl#DataEcosystem
+dedl:DataEcosystem rdf:type owl:Class .
+
+
+###  https://w3id.org/def/dedl#Decision
+dedl:Decision rdf:type owl:Class .
+
+
+###  https://w3id.org/def/dedl#Entity
+dedl:Entity rdf:type owl:Class .
+
+
+###  https://w3id.org/def/dedl#Individual
+dedl:Individual rdf:type owl:Class ;
+                rdfs:subClassOf dedl:Participant .
+
+
+###  https://w3id.org/def/dedl#Organization
+dedl:Organization rdf:type owl:Class ;
+                  rdfs:subClassOf dedl:Participant .
+
+
+###  https://w3id.org/def/dedl#Participant
+dedl:Participant rdf:type owl:Class .
+
+
+###  https://w3id.org/def/dedl#Policy
+dedl:Policy rdf:type owl:Class .
+
+
+###  https://w3id.org/def/dedl#PolicyLanguage
+dedl:PolicyLanguage rdf:type owl:Class .
+
+
+###  https://w3id.org/def/dedl#Process
+dedl:Process rdf:type owl:Class .
+
+
+###  https://w3id.org/def/didl#Identity
+didl:Identity rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/def/dedl#ABAC
+dedl:ABAC rdf:type owl:NamedIndividual ,
+                   dedl:AccessControlModel .
+
+
+###  https://w3id.org/def/dedl#ACP
+dedl:ACP rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/dedl#Allow
+dedl:Allow rdf:type owl:NamedIndividual ,
+                    dedl:Decision .
+
+
+###  https://w3id.org/def/dedl#Behavior
+dedl:Behavior rdf:type owl:NamedIndividual ,
+                       dedl:AuthenticationRiskContext .
+
+
+###  https://w3id.org/def/dedl#CapBAC
+dedl:CapBAC rdf:type owl:NamedIndividual ,
+                     dedl:AccessControlModel .
+
+
+###  https://w3id.org/def/dedl#Cryptography
+dedl:Cryptography rdf:type owl:NamedIndividual ,
+                           dedl:AuthenticationProctol .
+
+
+###  https://w3id.org/def/dedl#DAC
+dedl:DAC rdf:type owl:NamedIndividual ,
+                  dedl:AccessControlModel .
+
+
+###  https://w3id.org/def/dedl#Deny
+dedl:Deny rdf:type owl:NamedIndividual ,
+                   dedl:Decision .
+
+
+###  https://w3id.org/def/dedl#Device
+dedl:Device rdf:type owl:NamedIndividual ,
+                     dedl:AuthenticationRiskContext .
+
+
+###  https://w3id.org/def/dedl#Geolocation
+dedl:Geolocation rdf:type owl:NamedIndividual ,
+                          dedl:AuthenticationRiskContext .
+
+
+###  https://w3id.org/def/dedl#HybridArchitecture
+dedl:HybridArchitecture rdf:type owl:NamedIndividual ,
+                                 dedl:AuthorizationArchitecture .
+
+
+###  https://w3id.org/def/dedl#Kerberos
+dedl:Kerberos rdf:type owl:NamedIndividual ,
+                       dedl:AuthenticationProctol .
+
+
+###  https://w3id.org/def/dedl#LDAP
+dedl:LDAP rdf:type owl:NamedIndividual ,
+                   dedl:AuthenticationProctol .
+
+
+###  https://w3id.org/def/dedl#MAC
+dedl:MAC rdf:type owl:NamedIndividual ,
+                  dedl:AccessControlModel .
+
+
+###  https://w3id.org/def/dedl#MPEG-21
+dedl:MPEG-21 rdf:type owl:NamedIndividual ,
+                      dedl:PolicyLanguage .
+
+
+###  https://w3id.org/def/dedl#MultiFactor
+dedl:MultiFactor rdf:type owl:NamedIndividual ,
+                          dedl:AuthenticationFactor .
+
+
+###  https://w3id.org/def/dedl#Negotiate
+dedl:Negotiate rdf:type owl:NamedIndividual ,
+                        dedl:AuthorizationProcess .
+
+
+###  https://w3id.org/def/dedl#OBAC
+dedl:OBAC rdf:type owl:NamedIndividual ,
+                   dedl:AccessControlModel .
+
+
+###  https://w3id.org/def/dedl#ODRL
+dedl:ODRL rdf:type owl:NamedIndividual ,
+                   dedl:PolicyLanguage .
+
+
+###  https://w3id.org/def/dedl#OIDC
+dedl:OIDC rdf:type owl:NamedIndividual ,
+                   dedl:AuthenticationProctol .
+
+
+###  https://w3id.org/def/dedl#OneWay
+dedl:OneWay rdf:type owl:NamedIndividual ,
+                     dedl:AuthenticationProcess .
+
+
+###  https://w3id.org/def/dedl#OrBAC
+dedl:OrBAC rdf:type owl:NamedIndividual ,
+                    dedl:AccessControlModel .
+
+
+###  https://w3id.org/def/dedl#PolicyBasedArchitecture
+dedl:PolicyBasedArchitecture rdf:type owl:NamedIndividual ,
+                                      dedl:AuthorizationArchitecture .
+
+
+###  https://w3id.org/def/dedl#Poll
+dedl:Poll rdf:type owl:NamedIndividual ,
+                   dedl:AuthorizationProcess .
+
+
+###  https://w3id.org/def/dedl#Ponder
+dedl:Ponder rdf:type owl:NamedIndividual ,
+                     dedl:PolicyLanguage .
+
+
+###  https://w3id.org/def/dedl#Push
+dedl:Push rdf:type owl:NamedIndividual ,
+                   dedl:AuthorizationProcess .
+
+
+###  https://w3id.org/def/dedl#RBAC
+dedl:RBAC rdf:type owl:NamedIndividual ,
+                   dedl:AccessControlModel .
+
+
+###  https://w3id.org/def/dedl#Rego
+dedl:Rego rdf:type owl:NamedIndividual ,
+                   dedl:PolicyLanguage .
+
+
+###  https://w3id.org/def/dedl#RightsML
+dedl:RightsML rdf:type owl:NamedIndividual ,
+                       dedl:PolicyLanguage .
+
+
+###  https://w3id.org/def/dedl#SAML_2.0
+dedl:SAML_2.0 rdf:type owl:NamedIndividual ,
+                       dedl:AuthenticationProctol .
+
+
+###  https://w3id.org/def/dedl#Signature
+dedl:Signature rdf:type owl:NamedIndividual ,
+                        dedl:AuthenticationProctol .
+
+
+###  https://w3id.org/def/dedl#SingleFactor
+dedl:SingleFactor rdf:type owl:NamedIndividual ,
+                           dedl:AuthenticationFactor .
+
+
+###  https://w3id.org/def/dedl#ThreeWay
+dedl:ThreeWay rdf:type owl:NamedIndividual ,
+                       dedl:AuthenticationProcess .
+
+
+###  https://w3id.org/def/dedl#Time-based
+dedl:Time-based rdf:type owl:NamedIndividual ,
+                         dedl:AuthenticationRiskContext .
+
+
+###  https://w3id.org/def/dedl#TokenBasedArchitecture
+dedl:TokenBasedArchitecture rdf:type owl:NamedIndividual ,
+                                     dedl:AuthorizationArchitecture .
+
+
+###  https://w3id.org/def/dedl#TwoWay
+dedl:TwoWay rdf:type owl:NamedIndividual ,
+                     dedl:AuthenticationProcess .
+
+
+###  https://w3id.org/def/dedl#WebAuth
+dedl:WebAuth rdf:type owl:NamedIndividual ,
+                      dedl:AuthenticationProctol .
+
+
+###  https://w3id.org/def/dedl#XACMLPolicyLanguage
+dedl:XACMLPolicyLanguage rdf:type owl:NamedIndividual ,
+                                  dedl:PolicyLanguage .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
