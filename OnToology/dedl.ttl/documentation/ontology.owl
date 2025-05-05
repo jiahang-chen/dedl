@@ -282,7 +282,7 @@
 
     <owl:Class rdf:about="https://w3id.org/def/dedl#AccessControlModel">
         <rdfs:comment xml:lang="en">A conceptual framework defining how access to resources is managed, granted, and restricted.</rdfs:comment>
-        <rdfs:label xml:lang="en">Access Control Model</rdfs:label>
+        <rdfs:label xml:lang="en">AccessControlModel</rdfs:label>
     </owl:Class>
     
 
@@ -292,7 +292,7 @@
 
     <owl:Class rdf:about="https://w3id.org/def/dedl#AuthenticationFactor">
         <rdfs:comment xml:lang="en">An element used to verify the identity of a user or entity (e.g. password, token, biometrics).</rdfs:comment>
-        <rdfs:label xml:lang="en">Authentication Factor</rdfs:label>
+        <rdfs:label xml:lang="en">AuthenticationFactor</rdfs:label>
     </owl:Class>
     
 
@@ -302,7 +302,7 @@
 
     <owl:Class rdf:about="https://w3id.org/def/dedl#AuthenticationProcess">
         <rdfs:comment xml:lang="en">A procedure or sequence of steps that verify the identity of a user or entity.</rdfs:comment>
-        <rdfs:label xml:lang="en">Authentication Process</rdfs:label>
+        <rdfs:label xml:lang="en">AuthenticationProcess</rdfs:label>
     </owl:Class>
     
 
@@ -312,7 +312,7 @@
 
     <owl:Class rdf:about="https://w3id.org/def/dedl#AuthenticationProtocol">
         <rdfs:comment xml:lang="en">A specification of the interactions or steps used to perform authentication.</rdfs:comment>
-        <rdfs:label xml:lang="en">Authentication Protocol</rdfs:label>
+        <rdfs:label xml:lang="en">AuthenticationProtocol</rdfs:label>
     </owl:Class>
     
 
@@ -322,7 +322,7 @@
 
     <owl:Class rdf:about="https://w3id.org/def/dedl#AuthenticationRiskContext">
         <rdfs:comment xml:lang="en">Contextual attributes (time, location, device) that affect authentication risk levels.</rdfs:comment>
-        <rdfs:label xml:lang="en">Authentication Risk Context</rdfs:label>
+        <rdfs:label xml:lang="en">AuthenticationRiskContext</rdfs:label>
     </owl:Class>
     
 
@@ -342,7 +342,7 @@
 
     <owl:Class rdf:about="https://w3id.org/def/dedl#AuthorizationArchitecture">
         <rdfs:comment xml:lang="en">A structural framework that defines how authorization decisions are made and enforced.</rdfs:comment>
-        <rdfs:label xml:lang="en">Authorization Architecture</rdfs:label>
+        <rdfs:label xml:lang="en">AuthorizationArchitecture</rdfs:label>
     </owl:Class>
     
 
@@ -352,7 +352,7 @@
 
     <owl:Class rdf:about="https://w3id.org/def/dedl#AuthorizationProcess">
         <rdfs:comment xml:lang="en">A method or set of steps determining if an entity may access a resource.</rdfs:comment>
-        <rdfs:label xml:lang="en">Authorization Process</rdfs:label>
+        <rdfs:label xml:lang="en">AuthorizationProcess</rdfs:label>
     </owl:Class>
     
 
@@ -372,7 +372,7 @@
 
     <owl:Class rdf:about="https://w3id.org/def/dedl#DataEcosystem">
         <rdfs:comment xml:lang="en">A socio-technical system in which participants share and manage data and associated processes.</rdfs:comment>
-        <rdfs:label xml:lang="en">Data Ecosystem</rdfs:label>
+        <rdfs:label xml:lang="en">DataEcosystem</rdfs:label>
     </owl:Class>
     
 
@@ -391,7 +391,7 @@
 
 
     <owl:Class rdf:about="https://w3id.org/def/dedl#Entity">
-        <rdfs:comment xml:lang="en">Any identifiable object within the data ecosystem, e.g. a device or digital resource.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Any identifiable object of a participant within the data ecosystem, e.g. a device or digital resource.</rdfs:comment>
         <rdfs:label xml:lang="en">Entity</rdfs:label>
     </owl:Class>
     
@@ -444,7 +444,7 @@
 
     <owl:Class rdf:about="https://w3id.org/def/dedl#PolicyLanguage">
         <rdfs:comment xml:lang="en">A formal language for defining and expressing policies.</rdfs:comment>
-        <rdfs:label xml:lang="en">Policy Language</rdfs:label>
+        <rdfs:label xml:lang="en">PolicyLanguage</rdfs:label>
     </owl:Class>
     
 
@@ -615,7 +615,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/dedl#HybridArchitecture">
         <rdf:type rdf:resource="https://w3id.org/def/dedl#AuthorizationArchitecture"/>
         <rdfs:comment xml:lang="en">An AuthorizationArchitecture combining policy-based and token-based architecture</rdfs:comment>
-        <rdfs:label xml:lang="en">Hybrid Architecture</rdfs:label>
+        <rdfs:label xml:lang="en">HybridArchitecture</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -743,7 +743,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/dedl#OneWay">
         <rdf:type rdf:resource="https://w3id.org/def/dedl#AuthenticationProcess"/>
         <rdfs:comment xml:lang="en">A one-direction authentication process, typically from a client to a server.</rdfs:comment>
-        <rdfs:label xml:lang="en">One Way</rdfs:label>
+        <rdfs:label xml:lang="en">OneWay</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -765,7 +765,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/dedl#PolicyBasedArchitecture">
         <rdf:type rdf:resource="https://w3id.org/def/dedl#AuthorizationArchitecture"/>
         <rdfs:comment xml:lang="en">An AuthorizationArchitecture where authorization relies on evaluating formalized policies.</rdfs:comment>
-        <rdfs:label xml:lang="en">Policy-based Architecture</rdfs:label>
+        <rdfs:label xml:lang="en">PolicyBasedArchitecture</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -851,7 +851,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/dedl#SAML_2.0">
         <rdf:type rdf:resource="https://w3id.org/def/dedl#AuthenticationProtocol"/>
         <rdfs:comment xml:lang="en">Security Assertion Markup Language (2.0), exchanging authentication and authorization data.</rdfs:comment>
-        <rdfs:label xml:lang="en">SAML 2.0</rdfs:label>
+        <rdfs:label xml:lang="en">SAML2.0</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -873,7 +873,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/dedl#SingleFactor">
         <rdf:type rdf:resource="https://w3id.org/def/dedl#AuthenticationFactor"/>
         <rdfs:comment xml:lang="en">An authentication factor using only one method of verification (e.g., a single password).</rdfs:comment>
-        <rdfs:label xml:lang="en">Single Factor</rdfs:label>
+        <rdfs:label xml:lang="en">SingleFactor</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -884,7 +884,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/dedl#ThreeWay">
         <rdf:type rdf:resource="https://w3id.org/def/dedl#AuthenticationProcess"/>
         <rdfs:comment xml:lang="en">An authentication process involving a three-part handshake or three-step verification.</rdfs:comment>
-        <rdfs:label xml:lang="en">Three Way</rdfs:label>
+        <rdfs:label xml:lang="en">ThreeWay</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -895,7 +895,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/dedl#Time-based">
         <rdf:type rdf:resource="https://w3id.org/def/dedl#AuthenticationRiskContext"/>
         <rdfs:comment xml:lang="en">A context factor referencing time-sensitive credentials or restrictions (e.g., OTPs).</rdfs:comment>
-        <rdfs:label xml:lang="en">Time-based</rdfs:label>
+        <rdfs:label xml:lang="en">TimeBased</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -906,7 +906,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/dedl#TokenBasedArchitecture">
         <rdf:type rdf:resource="https://w3id.org/def/dedl#AuthorizationArchitecture"/>
         <rdfs:comment xml:lang="en">An authorization architecture using tokens (e.g., JWT)</rdfs:comment>
-        <rdfs:label xml:lang="en">Token-based Architecture</rdfs:label>
+        <rdfs:label xml:lang="en">TokenBasedArchitecture</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -917,7 +917,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/dedl#TwoWay">
         <rdf:type rdf:resource="https://w3id.org/def/dedl#AuthenticationProcess"/>
         <rdfs:comment xml:lang="en">A mutual authentication process where both parties verify each other&apos;s identity.</rdfs:comment>
-        <rdfs:label xml:lang="en">Two Way</rdfs:label>
+        <rdfs:label xml:lang="en">TwoWay</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -939,7 +939,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/dedl#XACMLPolicyLanguage">
         <rdf:type rdf:resource="https://w3id.org/def/dedl#PolicyLanguage"/>
         <rdfs:comment xml:lang="en">An OASIS standard policy language for defining access control rules (XACML framework).</rdfs:comment>
-        <rdfs:label xml:lang="en">XACML Policy Language</rdfs:label>
+        <rdfs:label xml:lang="en">XACMLPolicyLanguage</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 
