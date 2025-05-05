@@ -158,27 +158,27 @@
 # https://w3id.org/def/dedl#AccessControlModel
 <https://w3id.org/def/dedl#AccessControlModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/dedl#AccessControlModel> <http://www.w3.org/2000/01/rdf-schema#comment> "A conceptual framework defining how access to resources is managed, granted, and restricted."@en .
-<https://w3id.org/def/dedl#AccessControlModel> <http://www.w3.org/2000/01/rdf-schema#label> "Access Control Model"@en .
+<https://w3id.org/def/dedl#AccessControlModel> <http://www.w3.org/2000/01/rdf-schema#label> "AccessControlModel"@en .
 # 
 # https://w3id.org/def/dedl#AuthenticationFactor
 <https://w3id.org/def/dedl#AuthenticationFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/dedl#AuthenticationFactor> <http://www.w3.org/2000/01/rdf-schema#comment> "An element used to verify the identity of a user or entity (e.g. password, token, biometrics)."@en .
-<https://w3id.org/def/dedl#AuthenticationFactor> <http://www.w3.org/2000/01/rdf-schema#label> "Authentication Factor"@en .
+<https://w3id.org/def/dedl#AuthenticationFactor> <http://www.w3.org/2000/01/rdf-schema#label> "AuthenticationFactor"@en .
 # 
 # https://w3id.org/def/dedl#AuthenticationProcess
 <https://w3id.org/def/dedl#AuthenticationProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/dedl#AuthenticationProcess> <http://www.w3.org/2000/01/rdf-schema#comment> "A procedure or sequence of steps that verify the identity of a user or entity."@en .
-<https://w3id.org/def/dedl#AuthenticationProcess> <http://www.w3.org/2000/01/rdf-schema#label> "Authentication Process"@en .
+<https://w3id.org/def/dedl#AuthenticationProcess> <http://www.w3.org/2000/01/rdf-schema#label> "AuthenticationProcess"@en .
 # 
 # https://w3id.org/def/dedl#AuthenticationProtocol
 <https://w3id.org/def/dedl#AuthenticationProtocol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/dedl#AuthenticationProtocol> <http://www.w3.org/2000/01/rdf-schema#comment> "A specification of the interactions or steps used to perform authentication."@en .
-<https://w3id.org/def/dedl#AuthenticationProtocol> <http://www.w3.org/2000/01/rdf-schema#label> "Authentication Protocol"@en .
+<https://w3id.org/def/dedl#AuthenticationProtocol> <http://www.w3.org/2000/01/rdf-schema#label> "AuthenticationProtocol"@en .
 # 
 # https://w3id.org/def/dedl#AuthenticationRiskContext
 <https://w3id.org/def/dedl#AuthenticationRiskContext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/dedl#AuthenticationRiskContext> <http://www.w3.org/2000/01/rdf-schema#comment> "Contextual attributes (time, location, device) that affect authentication risk levels."@en .
-<https://w3id.org/def/dedl#AuthenticationRiskContext> <http://www.w3.org/2000/01/rdf-schema#label> "Authentication Risk Context"@en .
+<https://w3id.org/def/dedl#AuthenticationRiskContext> <http://www.w3.org/2000/01/rdf-schema#label> "AuthenticationRiskContext"@en .
 # 
 # https://w3id.org/def/dedl#Authenticator
 <https://w3id.org/def/dedl#Authenticator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -188,12 +188,12 @@
 # https://w3id.org/def/dedl#AuthorizationArchitecture
 <https://w3id.org/def/dedl#AuthorizationArchitecture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/dedl#AuthorizationArchitecture> <http://www.w3.org/2000/01/rdf-schema#comment> "A structural framework that defines how authorization decisions are made and enforced."@en .
-<https://w3id.org/def/dedl#AuthorizationArchitecture> <http://www.w3.org/2000/01/rdf-schema#label> "Authorization Architecture"@en .
+<https://w3id.org/def/dedl#AuthorizationArchitecture> <http://www.w3.org/2000/01/rdf-schema#label> "AuthorizationArchitecture"@en .
 # 
 # https://w3id.org/def/dedl#AuthorizationProcess
 <https://w3id.org/def/dedl#AuthorizationProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/dedl#AuthorizationProcess> <http://www.w3.org/2000/01/rdf-schema#comment> "A method or set of steps determining if an entity may access a resource."@en .
-<https://w3id.org/def/dedl#AuthorizationProcess> <http://www.w3.org/2000/01/rdf-schema#label> "Authorization Process"@en .
+<https://w3id.org/def/dedl#AuthorizationProcess> <http://www.w3.org/2000/01/rdf-schema#label> "AuthorizationProcess"@en .
 # 
 # https://w3id.org/def/dedl#Authorizator
 <https://w3id.org/def/dedl#Authorizator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -203,7 +203,7 @@
 # https://w3id.org/def/dedl#DataEcosystem
 <https://w3id.org/def/dedl#DataEcosystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/dedl#DataEcosystem> <http://www.w3.org/2000/01/rdf-schema#comment> "A socio-technical system in which participants share and manage data and associated processes."@en .
-<https://w3id.org/def/dedl#DataEcosystem> <http://www.w3.org/2000/01/rdf-schema#label> "Data Ecosystem"@en .
+<https://w3id.org/def/dedl#DataEcosystem> <http://www.w3.org/2000/01/rdf-schema#label> "DataEcosystem"@en .
 # 
 # https://w3id.org/def/dedl#Decision
 <https://w3id.org/def/dedl#Decision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -212,7 +212,7 @@
 # 
 # https://w3id.org/def/dedl#Entity
 <https://w3id.org/def/dedl#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/dedl#Entity> <http://www.w3.org/2000/01/rdf-schema#comment> "Any identifiable object within the data ecosystem, e.g. a device or digital resource."@en .
+<https://w3id.org/def/dedl#Entity> <http://www.w3.org/2000/01/rdf-schema#comment> "Any identifiable object of a participant within the data ecosystem, e.g. a device or digital resource."@en .
 <https://w3id.org/def/dedl#Entity> <http://www.w3.org/2000/01/rdf-schema#label> "Entity"@en .
 # 
 # https://w3id.org/def/dedl#Individual
@@ -240,7 +240,7 @@
 # https://w3id.org/def/dedl#PolicyLanguage
 <https://w3id.org/def/dedl#PolicyLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/dedl#PolicyLanguage> <http://www.w3.org/2000/01/rdf-schema#comment> "A formal language for defining and expressing policies."@en .
-<https://w3id.org/def/dedl#PolicyLanguage> <http://www.w3.org/2000/01/rdf-schema#label> "Policy Language"@en .
+<https://w3id.org/def/dedl#PolicyLanguage> <http://www.w3.org/2000/01/rdf-schema#label> "PolicyLanguage"@en .
 # 
 # https://w3id.org/def/dedl#Process
 <https://w3id.org/def/dedl#Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -333,7 +333,7 @@
 <https://w3id.org/def/dedl#HybridArchitecture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/dedl#HybridArchitecture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AuthorizationArchitecture> .
 <https://w3id.org/def/dedl#HybridArchitecture> <http://www.w3.org/2000/01/rdf-schema#comment> "An AuthorizationArchitecture combining policy-based and token-based architecture"@en .
-<https://w3id.org/def/dedl#HybridArchitecture> <http://www.w3.org/2000/01/rdf-schema#label> "Hybrid Architecture"@en .
+<https://w3id.org/def/dedl#HybridArchitecture> <http://www.w3.org/2000/01/rdf-schema#label> "HybridArchitecture"@en .
 # 
 # https://w3id.org/def/dedl#Kerberos
 <https://w3id.org/def/dedl#Kerberos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -401,7 +401,7 @@
 <https://w3id.org/def/dedl#OneWay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/dedl#OneWay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AuthenticationProcess> .
 <https://w3id.org/def/dedl#OneWay> <http://www.w3.org/2000/01/rdf-schema#comment> "A one-direction authentication process, typically from a client to a server."@en .
-<https://w3id.org/def/dedl#OneWay> <http://www.w3.org/2000/01/rdf-schema#label> "One Way"@en .
+<https://w3id.org/def/dedl#OneWay> <http://www.w3.org/2000/01/rdf-schema#label> "OneWay"@en .
 # 
 # https://w3id.org/def/dedl#OrBAC
 <https://w3id.org/def/dedl#OrBAC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -413,7 +413,7 @@
 <https://w3id.org/def/dedl#PolicyBasedArchitecture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/dedl#PolicyBasedArchitecture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AuthorizationArchitecture> .
 <https://w3id.org/def/dedl#PolicyBasedArchitecture> <http://www.w3.org/2000/01/rdf-schema#comment> "An AuthorizationArchitecture where authorization relies on evaluating formalized policies."@en .
-<https://w3id.org/def/dedl#PolicyBasedArchitecture> <http://www.w3.org/2000/01/rdf-schema#label> "Policy-based Architecture"@en .
+<https://w3id.org/def/dedl#PolicyBasedArchitecture> <http://www.w3.org/2000/01/rdf-schema#label> "PolicyBasedArchitecture"@en .
 # 
 # https://w3id.org/def/dedl#Poll
 <https://w3id.org/def/dedl#Poll> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -459,7 +459,7 @@
 <https://w3id.org/def/dedl#SAML_2.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/dedl#SAML_2.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AuthenticationProtocol> .
 <https://w3id.org/def/dedl#SAML_2.0> <http://www.w3.org/2000/01/rdf-schema#comment> "Security Assertion Markup Language (2.0), exchanging authentication and authorization data."@en .
-<https://w3id.org/def/dedl#SAML_2.0> <http://www.w3.org/2000/01/rdf-schema#label> "SAML 2.0"@en .
+<https://w3id.org/def/dedl#SAML_2.0> <http://www.w3.org/2000/01/rdf-schema#label> "SAML2.0"@en .
 # 
 # https://w3id.org/def/dedl#Signature
 <https://w3id.org/def/dedl#Signature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -471,31 +471,31 @@
 <https://w3id.org/def/dedl#SingleFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/dedl#SingleFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AuthenticationFactor> .
 <https://w3id.org/def/dedl#SingleFactor> <http://www.w3.org/2000/01/rdf-schema#comment> "An authentication factor using only one method of verification (e.g., a single password)."@en .
-<https://w3id.org/def/dedl#SingleFactor> <http://www.w3.org/2000/01/rdf-schema#label> "Single Factor"@en .
+<https://w3id.org/def/dedl#SingleFactor> <http://www.w3.org/2000/01/rdf-schema#label> "SingleFactor"@en .
 # 
 # https://w3id.org/def/dedl#ThreeWay
 <https://w3id.org/def/dedl#ThreeWay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/dedl#ThreeWay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AuthenticationProcess> .
 <https://w3id.org/def/dedl#ThreeWay> <http://www.w3.org/2000/01/rdf-schema#comment> "An authentication process involving a three-part handshake or three-step verification."@en .
-<https://w3id.org/def/dedl#ThreeWay> <http://www.w3.org/2000/01/rdf-schema#label> "Three Way"@en .
+<https://w3id.org/def/dedl#ThreeWay> <http://www.w3.org/2000/01/rdf-schema#label> "ThreeWay"@en .
 # 
 # https://w3id.org/def/dedl#Time-based
 <https://w3id.org/def/dedl#Time-based> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/dedl#Time-based> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AuthenticationRiskContext> .
 <https://w3id.org/def/dedl#Time-based> <http://www.w3.org/2000/01/rdf-schema#comment> "A context factor referencing time-sensitive credentials or restrictions (e.g., OTPs)."@en .
-<https://w3id.org/def/dedl#Time-based> <http://www.w3.org/2000/01/rdf-schema#label> "Time-based"@en .
+<https://w3id.org/def/dedl#Time-based> <http://www.w3.org/2000/01/rdf-schema#label> "TimeBased"@en .
 # 
 # https://w3id.org/def/dedl#TokenBasedArchitecture
 <https://w3id.org/def/dedl#TokenBasedArchitecture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/dedl#TokenBasedArchitecture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AuthorizationArchitecture> .
 <https://w3id.org/def/dedl#TokenBasedArchitecture> <http://www.w3.org/2000/01/rdf-schema#comment> "An authorization architecture using tokens (e.g., JWT)"@en .
-<https://w3id.org/def/dedl#TokenBasedArchitecture> <http://www.w3.org/2000/01/rdf-schema#label> "Token-based Architecture"@en .
+<https://w3id.org/def/dedl#TokenBasedArchitecture> <http://www.w3.org/2000/01/rdf-schema#label> "TokenBasedArchitecture"@en .
 # 
 # https://w3id.org/def/dedl#TwoWay
 <https://w3id.org/def/dedl#TwoWay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/dedl#TwoWay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#AuthenticationProcess> .
 <https://w3id.org/def/dedl#TwoWay> <http://www.w3.org/2000/01/rdf-schema#comment> "A mutual authentication process where both parties verify each other's identity."@en .
-<https://w3id.org/def/dedl#TwoWay> <http://www.w3.org/2000/01/rdf-schema#label> "Two Way"@en .
+<https://w3id.org/def/dedl#TwoWay> <http://www.w3.org/2000/01/rdf-schema#label> "TwoWay"@en .
 # 
 # https://w3id.org/def/dedl#WebAuth
 <https://w3id.org/def/dedl#WebAuth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -507,6 +507,6 @@
 <https://w3id.org/def/dedl#XACMLPolicyLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/dedl#XACMLPolicyLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/dedl#PolicyLanguage> .
 <https://w3id.org/def/dedl#XACMLPolicyLanguage> <http://www.w3.org/2000/01/rdf-schema#comment> "An OASIS standard policy language for defining access control rules (XACML framework)."@en .
-<https://w3id.org/def/dedl#XACMLPolicyLanguage> <http://www.w3.org/2000/01/rdf-schema#label> "XACML Policy Language"@en .
+<https://w3id.org/def/dedl#XACMLPolicyLanguage> <http://www.w3.org/2000/01/rdf-schema#label> "XACMLPolicyLanguage"@en .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

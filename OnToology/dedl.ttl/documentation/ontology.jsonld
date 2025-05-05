@@ -79,7 +79,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Access Control Model"
+    "@value" : "AccessControlModel"
   } ]
 }, {
   "@id" : "https://w3id.org/def/dedl#Allow",
@@ -104,7 +104,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Authentication Factor"
+    "@value" : "AuthenticationFactor"
   } ]
 }, {
   "@id" : "https://w3id.org/def/dedl#AuthenticationProcess",
@@ -115,7 +115,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Authentication Process"
+    "@value" : "AuthenticationProcess"
   } ]
 }, {
   "@id" : "https://w3id.org/def/dedl#AuthenticationProtocol",
@@ -126,7 +126,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Authentication Protocol"
+    "@value" : "AuthenticationProtocol"
   } ]
 }, {
   "@id" : "https://w3id.org/def/dedl#AuthenticationRiskContext",
@@ -137,7 +137,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Authentication Risk Context"
+    "@value" : "AuthenticationRiskContext"
   } ]
 }, {
   "@id" : "https://w3id.org/def/dedl#Authenticator",
@@ -159,7 +159,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Authorization Architecture"
+    "@value" : "AuthorizationArchitecture"
   } ]
 }, {
   "@id" : "https://w3id.org/def/dedl#AuthorizationProcess",
@@ -170,7 +170,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Authorization Process"
+    "@value" : "AuthorizationProcess"
   } ]
 }, {
   "@id" : "https://w3id.org/def/dedl#Authorizator",
@@ -248,7 +248,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Data Ecosystem"
+    "@value" : "DataEcosystem"
   } ]
 }, {
   "@id" : "https://w3id.org/def/dedl#Decision",
@@ -294,7 +294,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Any identifiable object within the data ecosystem, e.g. a device or digital resource."
+    "@value" : "Any identifiable object of a participant within the data ecosystem, e.g. a device or digital resource."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -338,7 +338,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Hybrid Architecture"
+    "@value" : "HybridArchitecture"
   } ]
 }, {
   "@id" : "https://w3id.org/def/dedl#Individual",
@@ -504,7 +504,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "One Way"
+    "@value" : "OneWay"
   } ]
 }, {
   "@id" : "https://w3id.org/def/dedl#OrBAC",
@@ -568,7 +568,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Policy-based Architecture"
+    "@value" : "PolicyBasedArchitecture"
   } ]
 }, {
   "@id" : "https://w3id.org/def/dedl#PolicyLanguage",
@@ -579,7 +579,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Policy Language"
+    "@value" : "PolicyLanguage"
   } ]
 }, {
   "@id" : "https://w3id.org/def/dedl#Poll",
@@ -694,7 +694,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "SAML 2.0"
+    "@value" : "SAML2.0"
   } ]
 }, {
   "@id" : "https://w3id.org/def/dedl#Signature",
@@ -722,7 +722,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Single Factor"
+    "@value" : "SingleFactor"
   } ]
 }, {
   "@id" : "https://w3id.org/def/dedl#ThreeWay",
@@ -736,7 +736,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Three Way"
+    "@value" : "ThreeWay"
   } ]
 }, {
   "@id" : "https://w3id.org/def/dedl#Time-based",
@@ -750,7 +750,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Time-based"
+    "@value" : "TimeBased"
   } ]
 }, {
   "@id" : "https://w3id.org/def/dedl#TokenBasedArchitecture",
@@ -764,7 +764,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Token-based Architecture"
+    "@value" : "TokenBasedArchitecture"
   } ]
 }, {
   "@id" : "https://w3id.org/def/dedl#TwoWay",
@@ -778,7 +778,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Two Way"
+    "@value" : "TwoWay"
   } ]
 }, {
   "@id" : "https://w3id.org/def/dedl#WebAuth",
@@ -806,7 +806,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "XACML Policy Language"
+    "@value" : "XACMLPolicyLanguage"
   } ]
 }, {
   "@id" : "https://w3id.org/def/dedl#accessControlModel",
