@@ -130,8 +130,7 @@ dedl:identity rdf:type owl:ObjectProperty ;
 
 ###  https://w3id.org/def/dedl#operates
 dedl:operates rdf:type owl:ObjectProperty ;
-              rdfs:domain dedl:Participant ;
-              rdfs:range dedl:TechnicalDataEcosystemElement .
+              rdfs:subPropertyOf dedl:relationship .
 
 
 ###  https://w3id.org/def/dedl#policy
@@ -158,10 +157,15 @@ dedl:process rdf:type owl:ObjectProperty ;
              rdfs:label "process"@en .
 
 
+###  https://w3id.org/def/dedl#relationship
+dedl:relationship rdf:type owl:ObjectProperty ;
+                  rdfs:domain dedl:Participant ;
+                  rdfs:range dedl:TechnicalDataEcosystemElement .
+
+
 ###  https://w3id.org/def/dedl#uses
 dedl:uses rdf:type owl:ObjectProperty ;
-          rdfs:domain dedl:Participant ;
-          rdfs:range dedl:TechnicalDataEcosystemElement .
+          rdfs:subPropertyOf dedl:relationship .
 
 
 #################################################################
