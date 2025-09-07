@@ -149,6 +149,9 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Authenticator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/dedl#TechnicalDataEcosystemElement"
   } ]
 }, {
   "@id" : "https://w3id.org/def/dedl#AuthorizationArchitecture",
@@ -182,6 +185,9 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Authorizator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/dedl#TechnicalDataEcosystemElement"
   } ]
 }, {
   "@id" : "https://w3id.org/def/dedl#Behavior",
@@ -249,6 +255,17 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "DataEcosystem"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/dedl#DataEcosystemElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@language" : "en",
+    "@value" : "Abstraction of consisting elements in a data ecosystem, which can be specified to technical data ecosystem elements and participants"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "DataEcosystemElement"
   } ]
 }, {
   "@id" : "https://w3id.org/def/dedl#Decision",
@@ -544,6 +561,9 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Participant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/dedl#DataEcosystemElement"
   } ]
 }, {
   "@id" : "https://w3id.org/def/dedl#Policy",
@@ -725,6 +745,20 @@
     "@value" : "SingleFactor"
   } ]
 }, {
+  "@id" : "https://w3id.org/def/dedl#TechnicalDataEcosystemElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@language" : "en",
+    "@value" : "Technical components used in a data ecosystem, e.g., authenticators and authorizators"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "TechnicalDataEcosystemElement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/dedl#DataEcosystemElement"
+  } ]
+}, {
   "@id" : "https://w3id.org/def/dedl#ThreeWay",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -894,23 +928,6 @@
     "@id" : "https://w3id.org/def/dedl#AuthenticationRiskContext"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/dedl#authenticator",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Relates a Participant to an Authenticator performing authentication on their behalf."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/dedl#Participant"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "authenticator"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/dedl#Authenticator"
-  } ]
-}, {
   "@id" : "https://w3id.org/def/dedl#authorizationArchitecture",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -945,21 +962,13 @@
     "@id" : "https://w3id.org/def/dedl#AuthorizationProcess"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/dedl#authorizator",
+  "@id" : "https://w3id.org/def/dedl#element",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Declares a Participant to be an Authorizator responsible for enforcing authorization decisions."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/dedl#Participant"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "authorizator"
+    "@id" : "https://w3id.org/def/dedl#DataEcosystem"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/dedl#Authorizator"
+    "@id" : "https://w3id.org/def/dedl#DataEcosystemElement"
   } ]
 }, {
   "@id" : "https://w3id.org/def/dedl#entity",
@@ -996,21 +1005,10 @@
     "@id" : "https://w3id.org/def/didl#Identity"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/dedl#participant",
+  "@id" : "https://w3id.org/def/dedl#operates",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Specifies a Participant within a DataEcosystem."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/dedl#DataEcosystem"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "participant"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/dedl#Participant"
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/def/dedl#relationship"
   } ]
 }, {
   "@id" : "https://w3id.org/def/dedl#policy",
@@ -1062,6 +1060,21 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/def/dedl#Process"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/dedl#relationship",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/dedl#Participant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/dedl#TechnicalDataEcosystemElement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/dedl#uses",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/def/dedl#relationship"
   } ]
 }, {
   "@id" : "https://w3id.org/def/didl#Identity",
