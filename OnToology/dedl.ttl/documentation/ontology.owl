@@ -145,18 +145,6 @@
     
 
 
-    <!-- https://w3id.org/def/dedl#authenticator -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/def/dedl#authenticator">
-        <rdfs:domain rdf:resource="https://w3id.org/def/dedl#Participant"/>
-        <rdfs:range rdf:resource="https://w3id.org/def/dedl#Authenticator"/>
-        <rdfs:comment xml:lang="en">Relates a Participant to an Authenticator performing authentication on their behalf.</rdfs:comment>
-        <rdfs:label xml:lang="en">authenticator</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/def/dedl#authorizationArchitecture -->
 
 
@@ -181,14 +169,12 @@
     
 
 
-    <!-- https://w3id.org/def/dedl#authorizator -->
+    <!-- https://w3id.org/def/dedl#element -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/def/dedl#authorizator">
-        <rdfs:domain rdf:resource="https://w3id.org/def/dedl#Participant"/>
-        <rdfs:range rdf:resource="https://w3id.org/def/dedl#Authorizator"/>
-        <rdfs:comment xml:lang="en">Declares a Participant to be an Authorizator responsible for enforcing authorization decisions.</rdfs:comment>
-        <rdfs:label xml:lang="en">authorizator</rdfs:label>
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/dedl#element">
+        <rdfs:domain rdf:resource="https://w3id.org/def/dedl#DataEcosystem"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/dedl#DataEcosystemElement"/>
     </owl:ObjectProperty>
     
 
@@ -217,14 +203,12 @@
     
 
 
-    <!-- https://w3id.org/def/dedl#participant -->
+    <!-- https://w3id.org/def/dedl#operates -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/def/dedl#participant">
-        <rdfs:domain rdf:resource="https://w3id.org/def/dedl#DataEcosystem"/>
-        <rdfs:range rdf:resource="https://w3id.org/def/dedl#Participant"/>
-        <rdfs:comment xml:lang="en">Specifies a Participant within a DataEcosystem.</rdfs:comment>
-        <rdfs:label xml:lang="en">participant</rdfs:label>
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/dedl#operates">
+        <rdfs:domain rdf:resource="https://w3id.org/def/dedl#Participant"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/dedl#TechnicalDataEcosystemElement"/>
     </owl:ObjectProperty>
     
 
@@ -261,6 +245,16 @@
         <rdfs:range rdf:resource="https://w3id.org/def/dedl#Process"/>
         <rdfs:comment xml:lang="en">Associates a DataEcosystem with a particular Process.</rdfs:comment>
         <rdfs:label xml:lang="en">process</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/dedl#uses -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/dedl#uses">
+        <rdfs:domain rdf:resource="https://w3id.org/def/dedl#Participant"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/dedl#TechnicalDataEcosystemElement"/>
     </owl:ObjectProperty>
     
 
@@ -331,6 +325,7 @@
 
 
     <owl:Class rdf:about="https://w3id.org/def/dedl#Authenticator">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/dedl#TechnicalDataEcosystemElement"/>
         <rdfs:comment xml:lang="en">An actor or component responsible for carrying out the authentication process.</rdfs:comment>
         <rdfs:label xml:lang="en">Authenticator</rdfs:label>
     </owl:Class>
@@ -361,6 +356,7 @@
 
 
     <owl:Class rdf:about="https://w3id.org/def/dedl#Authorizator">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/dedl#TechnicalDataEcosystemElement"/>
         <rdfs:comment xml:lang="en">An actor or component that assesses permissions and enforces authorization decisions.</rdfs:comment>
         <rdfs:label xml:lang="en">Authorizator</rdfs:label>
     </owl:Class>
@@ -373,6 +369,16 @@
     <owl:Class rdf:about="https://w3id.org/def/dedl#DataEcosystem">
         <rdfs:comment xml:lang="en">A socio-technical system in which participants share and manage data and associated processes.</rdfs:comment>
         <rdfs:label xml:lang="en">DataEcosystem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/dedl#DataEcosystemElement -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/dedl#DataEcosystemElement">
+        <terms:abstract xml:lang="en">Abstraction of consisting elements in a data ecosystem, which can be specified to technical data ecosystem elements and participants</terms:abstract>
+        <rdfs:label xml:lang="en">DataEcosystemElement</rdfs:label>
     </owl:Class>
     
 
@@ -423,6 +429,7 @@
 
 
     <owl:Class rdf:about="https://w3id.org/def/dedl#Participant">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/dedl#DataEcosystemElement"/>
         <rdfs:comment xml:lang="en">a stakeholder within the data ecosystem (either an Individual or Organization).</rdfs:comment>
         <rdfs:label xml:lang="en">Participant</rdfs:label>
     </owl:Class>
@@ -455,6 +462,17 @@
     <owl:Class rdf:about="https://w3id.org/def/dedl#Process">
         <rdfs:comment xml:lang="en">A series of operations or activities performed within the data ecosystem.</rdfs:comment>
         <rdfs:label xml:lang="en">Process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/dedl#TechnicalDataEcosystemElement -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/dedl#TechnicalDataEcosystemElement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/dedl#DataEcosystemElement"/>
+        <dc:description xml:lang="en">Technical components used in a data ecosystem, e.g., authenticators and authorizators</dc:description>
+        <rdfs:label xml:lang="en">TechnicalDataEcosystemElement</rdfs:label>
     </owl:Class>
     
 
