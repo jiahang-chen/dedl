@@ -76,13 +76,6 @@
 <https://w3id.org/def/dedl#authenticationRiskContext> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates an Authenticator with contextual factors that influence authentication risk."@en .
 <https://w3id.org/def/dedl#authenticationRiskContext> <http://www.w3.org/2000/01/rdf-schema#label> "authenticationRiskContext"@en .
 # 
-# https://w3id.org/def/dedl#authenticator
-<https://w3id.org/def/dedl#authenticator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/dedl#authenticator> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/dedl#Participant> .
-<https://w3id.org/def/dedl#authenticator> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/dedl#Authenticator> .
-<https://w3id.org/def/dedl#authenticator> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a Participant to an Authenticator performing authentication on their behalf."@en .
-<https://w3id.org/def/dedl#authenticator> <http://www.w3.org/2000/01/rdf-schema#label> "authenticator"@en .
-# 
 # https://w3id.org/def/dedl#authorizationArchitecture
 <https://w3id.org/def/dedl#authorizationArchitecture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/def/dedl#authorizationArchitecture> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/dedl#Authorizator> .
@@ -97,12 +90,10 @@
 <https://w3id.org/def/dedl#authorizationProcess> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the AuthorizationProcess followed by an Authorizator."@en .
 <https://w3id.org/def/dedl#authorizationProcess> <http://www.w3.org/2000/01/rdf-schema#label> "authorizationProcess"@en .
 # 
-# https://w3id.org/def/dedl#authorizator
-<https://w3id.org/def/dedl#authorizator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/dedl#authorizator> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/dedl#Participant> .
-<https://w3id.org/def/dedl#authorizator> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/dedl#Authorizator> .
-<https://w3id.org/def/dedl#authorizator> <http://www.w3.org/2000/01/rdf-schema#comment> "Declares a Participant to be an Authorizator responsible for enforcing authorization decisions."@en .
-<https://w3id.org/def/dedl#authorizator> <http://www.w3.org/2000/01/rdf-schema#label> "authorizator"@en .
+# https://w3id.org/def/dedl#element
+<https://w3id.org/def/dedl#element> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/dedl#element> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/dedl#DataEcosystem> .
+<https://w3id.org/def/dedl#element> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/dedl#DataEcosystemElement> .
 # 
 # https://w3id.org/def/dedl#entity
 <https://w3id.org/def/dedl#entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -118,12 +109,9 @@
 <https://w3id.org/def/dedl#identity> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the Identity belonging to an Entity."@en .
 <https://w3id.org/def/dedl#identity> <http://www.w3.org/2000/01/rdf-schema#label> "identity"@en .
 # 
-# https://w3id.org/def/dedl#participant
-<https://w3id.org/def/dedl#participant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/dedl#participant> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/dedl#DataEcosystem> .
-<https://w3id.org/def/dedl#participant> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/dedl#Participant> .
-<https://w3id.org/def/dedl#participant> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies a Participant within a DataEcosystem."@en .
-<https://w3id.org/def/dedl#participant> <http://www.w3.org/2000/01/rdf-schema#label> "participant"@en .
+# https://w3id.org/def/dedl#operates
+<https://w3id.org/def/dedl#operates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/dedl#operates> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/dedl#relationship> .
 # 
 # https://w3id.org/def/dedl#policy
 <https://w3id.org/def/dedl#policy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -145,6 +133,15 @@
 <https://w3id.org/def/dedl#process> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/dedl#Process> .
 <https://w3id.org/def/dedl#process> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates a DataEcosystem with a particular Process."@en .
 <https://w3id.org/def/dedl#process> <http://www.w3.org/2000/01/rdf-schema#label> "process"@en .
+# 
+# https://w3id.org/def/dedl#relationship
+<https://w3id.org/def/dedl#relationship> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/dedl#relationship> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/dedl#Participant> .
+<https://w3id.org/def/dedl#relationship> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/dedl#TechnicalDataEcosystemElement> .
+# 
+# https://w3id.org/def/dedl#uses
+<https://w3id.org/def/dedl#uses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/dedl#uses> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/dedl#relationship> .
 # 
 # 
 # 
@@ -182,6 +179,7 @@
 # 
 # https://w3id.org/def/dedl#Authenticator
 <https://w3id.org/def/dedl#Authenticator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/dedl#Authenticator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/dedl#TechnicalDataEcosystemElement> .
 <https://w3id.org/def/dedl#Authenticator> <http://www.w3.org/2000/01/rdf-schema#comment> "An actor or component responsible for carrying out the authentication process."@en .
 <https://w3id.org/def/dedl#Authenticator> <http://www.w3.org/2000/01/rdf-schema#label> "Authenticator"@en .
 # 
@@ -197,6 +195,7 @@
 # 
 # https://w3id.org/def/dedl#Authorizator
 <https://w3id.org/def/dedl#Authorizator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/dedl#Authorizator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/dedl#TechnicalDataEcosystemElement> .
 <https://w3id.org/def/dedl#Authorizator> <http://www.w3.org/2000/01/rdf-schema#comment> "An actor or component that assesses permissions and enforces authorization decisions."@en .
 <https://w3id.org/def/dedl#Authorizator> <http://www.w3.org/2000/01/rdf-schema#label> "Authorizator"@en .
 # 
@@ -204,6 +203,11 @@
 <https://w3id.org/def/dedl#DataEcosystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/dedl#DataEcosystem> <http://www.w3.org/2000/01/rdf-schema#comment> "A socio-technical system in which participants share and manage data and associated processes."@en .
 <https://w3id.org/def/dedl#DataEcosystem> <http://www.w3.org/2000/01/rdf-schema#label> "DataEcosystem"@en .
+# 
+# https://w3id.org/def/dedl#DataEcosystemElement
+<https://w3id.org/def/dedl#DataEcosystemElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/dedl#DataEcosystemElement> <http://purl.org/dc/terms/abstract> "Abstraction of consisting elements in a data ecosystem, which can be specified to technical data ecosystem elements and participants"@en .
+<https://w3id.org/def/dedl#DataEcosystemElement> <http://www.w3.org/2000/01/rdf-schema#label> "DataEcosystemElement"@en .
 # 
 # https://w3id.org/def/dedl#Decision
 <https://w3id.org/def/dedl#Decision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -229,6 +233,7 @@
 # 
 # https://w3id.org/def/dedl#Participant
 <https://w3id.org/def/dedl#Participant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/dedl#Participant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/dedl#DataEcosystemElement> .
 <https://w3id.org/def/dedl#Participant> <http://www.w3.org/2000/01/rdf-schema#comment> "a stakeholder within the data ecosystem (either an Individual or Organization)."@en .
 <https://w3id.org/def/dedl#Participant> <http://www.w3.org/2000/01/rdf-schema#label> "Participant"@en .
 # 
@@ -246,6 +251,12 @@
 <https://w3id.org/def/dedl#Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/dedl#Process> <http://www.w3.org/2000/01/rdf-schema#comment> "A series of operations or activities performed within the data ecosystem."@en .
 <https://w3id.org/def/dedl#Process> <http://www.w3.org/2000/01/rdf-schema#label> "Process"@en .
+# 
+# https://w3id.org/def/dedl#TechnicalDataEcosystemElement
+<https://w3id.org/def/dedl#TechnicalDataEcosystemElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/dedl#TechnicalDataEcosystemElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/dedl#DataEcosystemElement> .
+<https://w3id.org/def/dedl#TechnicalDataEcosystemElement> <http://purl.org/dc/elements/1.1/description> "Technical components used in a data ecosystem, e.g., authenticators and authorizators"@en .
+<https://w3id.org/def/dedl#TechnicalDataEcosystemElement> <http://www.w3.org/2000/01/rdf-schema#label> "TechnicalDataEcosystemElement"@en .
 # 
 # https://w3id.org/def/didl#Identity
 <https://w3id.org/def/didl#Identity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
