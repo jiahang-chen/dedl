@@ -38,6 +38,9 @@ This section provides details for each class and property defined by DEDL.
          <a href="#DataEcosystem" title="https://w3id.org/def/dedl#DataEcosystem">DataEcosystem</a>
       </li>
       <li>
+         <a href="#DataEcosystemElement" title="https://w3id.org/def/dedl#DataEcosystemElement">DataEcosystemElement</a>
+      </li>
+      <li>
          <a href="#Decision" title="https://w3id.org/def/dedl#Decision">Decision</a>
       </li>
       <li>
@@ -63,6 +66,10 @@ This section provides details for each class and property defined by DEDL.
       </li>
       <li>
          <a href="#Process" title="https://w3id.org/def/dedl#Process">Process</a>
+      </li>
+      <li>
+         <a href="#TechnicalDataEcosystemElement"
+            title="https://w3id.org/def/dedl#TechnicalDataEcosystemElement">TechnicalDataEcosystemElement</a>
       </li>
    </ul>
    <div class="entity" id="AccessControlModel">
@@ -210,6 +217,12 @@ This section provides details for each class and property defined by DEDL.
          <span class="markdown">An actor or component responsible for carrying out the authentication process.</span>
       </div>
       <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#TechnicalDataEcosystemElement"
+               title="https://w3id.org/def/dedl#TechnicalDataEcosystemElement">TechnicalDataEcosystemElement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
          <dt>is in domain of</dt>
          <dd>
             <a href="#authenticationFactor" title="https://w3id.org/def/dedl#authenticationFactor">authenticationFactor</a>
@@ -217,11 +230,6 @@ This section provides details for each class and property defined by DEDL.
             <sup class="type-op" title="object property">op</sup>, <a href="#authenticationProtocol" title="https://w3id.org/def/dedl#authenticationProtocol">authenticationProtocol</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#authenticationRiskContext"
                title="https://w3id.org/def/dedl#authenticationRiskContext">authenticationRiskContext</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#authenticator" title="https://w3id.org/def/dedl#authenticator">authenticator</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -290,16 +298,17 @@ This section provides details for each class and property defined by DEDL.
          <span class="markdown">An actor or component that assesses permissions and enforces authorization decisions.</span>
       </div>
       <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#TechnicalDataEcosystemElement"
+               title="https://w3id.org/def/dedl#TechnicalDataEcosystemElement">TechnicalDataEcosystemElement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
          <dt>is in domain of</dt>
          <dd>
             <a href="#authorizationArchitecture"
                title="https://w3id.org/def/dedl#authorizationArchitecture">authorizationArchitecture</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#authorizationProcess" title="https://w3id.org/def/dedl#authorizationProcess">authorizationProcess</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#authorizator" title="https://w3id.org/def/dedl#authorizator">authorizator</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -317,8 +326,30 @@ This section provides details for each class and property defined by DEDL.
       <dl class="description">
          <dt>is in domain of</dt>
          <dd>
-            <a href="#participant" title="https://w3id.org/def/dedl#participant">participant</a>
+            <a href="#element" title="https://w3id.org/def/dedl#element">element</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#process" title="https://w3id.org/def/dedl#process">process</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="DataEcosystemElement">
+      <h3>DataEcosystemElement<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/dedl#DataEcosystemElement</p>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Participant" title="https://w3id.org/def/dedl#Participant">Participant</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#TechnicalDataEcosystemElement"
+               title="https://w3id.org/def/dedl#TechnicalDataEcosystemElement">TechnicalDataEcosystemElement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#element" title="https://w3id.org/def/dedl#element">element</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -431,6 +462,11 @@ This section provides details for each class and property defined by DEDL.
          <span class="markdown">a stakeholder within the data ecosystem (either an Individual or Organization).</span>
       </div>
       <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#DataEcosystemElement" title="https://w3id.org/def/dedl#DataEcosystemElement">DataEcosystemElement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
          <dt>has sub-classes</dt>
          <dd>
             <a href="#Individual" title="https://w3id.org/def/dedl#Individual">Individual</a>
@@ -439,14 +475,9 @@ This section provides details for each class and property defined by DEDL.
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#authenticator" title="https://w3id.org/def/dedl#authenticator">authenticator</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#authorizator" title="https://w3id.org/def/dedl#authorizator">authorizator</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#entity" title="https://w3id.org/def/dedl#entity">entity</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#participant" title="https://w3id.org/def/dedl#participant">participant</a>
+            <a href="#entity" title="https://w3id.org/def/dedl#entity">entity</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#operates" title="https://w3id.org/def/dedl#operates">operates</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#uses" title="https://w3id.org/def/dedl#uses">uses</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -531,6 +562,36 @@ This section provides details for each class and property defined by DEDL.
          </dd>
       </dl>
    </div>
+   <div class="entity" id="TechnicalDataEcosystemElement">
+      <h3>TechnicalDataEcosystemElement<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/dedl#TechnicalDataEcosystemElement</p>
+      <div class="info">
+         <span class="markdown">Technical components used in a data ecosystem, e.g., authenticators and authorizators</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#DataEcosystemElement" title="https://w3id.org/def/dedl#DataEcosystemElement">DataEcosystemElement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Authenticator" title="https://w3id.org/def/dedl#Authenticator">Authenticator</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Authorizator" title="https://w3id.org/def/dedl#Authorizator">Authorizator</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#operates" title="https://w3id.org/def/dedl#operates">operates</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#uses" title="https://w3id.org/def/dedl#uses">uses</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
 </div><div xmlns:widoco="https://w3id.org/widoco/vocab#"
      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
      id="objectproperties">
@@ -553,9 +614,6 @@ This section provides details for each class and property defined by DEDL.
             title="https://w3id.org/def/dedl#authenticationRiskContext">authenticationRiskContext</a>
       </li>
       <li>
-         <a href="#authenticator" title="https://w3id.org/def/dedl#authenticator">authenticator</a>
-      </li>
-      <li>
          <a href="#authorizationArchitecture"
             title="https://w3id.org/def/dedl#authorizationArchitecture">authorizationArchitecture</a>
       </li>
@@ -563,7 +621,9 @@ This section provides details for each class and property defined by DEDL.
          <a href="#authorizationProcess" title="https://w3id.org/def/dedl#authorizationProcess">authorizationProcess</a>
       </li>
       <li>
-         <a href="#authorizator" title="https://w3id.org/def/dedl#authorizator">authorizator</a>
+         <a href="#element" title="https://w3id.org/def/dedl#element">
+            <span>element</span>
+         </a>
       </li>
       <li>
          <a href="#entity" title="https://w3id.org/def/dedl#entity">entity</a>
@@ -572,7 +632,9 @@ This section provides details for each class and property defined by DEDL.
          <a href="#identity" title="https://w3id.org/def/dedl#identity">identity</a>
       </li>
       <li>
-         <a href="#participant" title="https://w3id.org/def/dedl#participant">participant</a>
+         <a href="#operates" title="https://w3id.org/def/dedl#operates">
+            <span>operates</span>
+         </a>
       </li>
       <li>
          <a href="#policy" title="https://w3id.org/def/dedl#policy">policy</a>
@@ -582,6 +644,11 @@ This section provides details for each class and property defined by DEDL.
       </li>
       <li>
          <a href="#process" title="https://w3id.org/def/dedl#process">process</a>
+      </li>
+      <li>
+         <a href="#uses" title="https://w3id.org/def/dedl#uses">
+            <span>uses</span>
+         </a>
       </li>
    </ul>
    <div class="entity" id="accessControlModel">
@@ -710,31 +777,6 @@ This section provides details for each class and property defined by DEDL.
          </dl>
       </div>
    </div>
-   <div class="entity" id="authenticator">
-      <h3>authenticator<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/def/dedl#authenticator</p>
-      <div class="comment">
-         <span class="markdown">Relates a Participant to an Authenticator performing authentication on their behalf.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Participant" title="https://w3id.org/def/dedl#Participant">Participant</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#Authenticator" title="https://w3id.org/def/dedl#Authenticator">Authenticator</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="authorizationArchitecture">
       <h3>authorizationArchitecture<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -786,26 +828,23 @@ This section provides details for each class and property defined by DEDL.
          </dl>
       </div>
    </div>
-   <div class="entity" id="authorizator">
-      <h3>authorizator<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="element">
+      <h3>element<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/dedl#authorizator</p>
-      <div class="comment">
-         <span class="markdown">Declares a Participant to be an Authorizator responsible for enforcing authorization decisions.</span>
-      </div>
+         <strong>IRI:</strong> https://w3id.org/def/dedl#element</p>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Participant" title="https://w3id.org/def/dedl#Participant">Participant</a>
+               <a href="#DataEcosystem" title="https://w3id.org/def/dedl#DataEcosystem">DataEcosystem</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Authorizator" title="https://w3id.org/def/dedl#Authorizator">Authorizator</a>
+               <a href="#DataEcosystemElement" title="https://w3id.org/def/dedl#DataEcosystemElement">DataEcosystemElement</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -861,26 +900,24 @@ This section provides details for each class and property defined by DEDL.
          </dl>
       </div>
    </div>
-   <div class="entity" id="participant">
-      <h3>participant<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="operates">
+      <h3>operates<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/dedl#participant</p>
-      <div class="comment">
-         <span class="markdown">Specifies a Participant within a DataEcosystem.</span>
-      </div>
+         <strong>IRI:</strong> https://w3id.org/def/dedl#operates</p>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#DataEcosystem" title="https://w3id.org/def/dedl#DataEcosystem">DataEcosystem</a>
+               <a href="#Participant" title="https://w3id.org/def/dedl#Participant">Participant</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Participant" title="https://w3id.org/def/dedl#Participant">Participant</a>
+               <a href="#TechnicalDataEcosystemElement"
+                  title="https://w3id.org/def/dedl#TechnicalDataEcosystemElement">TechnicalDataEcosystemElement</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -956,6 +993,29 @@ This section provides details for each class and property defined by DEDL.
             <dt>has range</dt>
             <dd>
                <a href="#Process" title="https://w3id.org/def/dedl#Process">Process</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="uses">
+      <h3>uses<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/dedl#uses</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Participant" title="https://w3id.org/def/dedl#Participant">Participant</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#TechnicalDataEcosystemElement"
+                  title="https://w3id.org/def/dedl#TechnicalDataEcosystemElement">TechnicalDataEcosystemElement</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>

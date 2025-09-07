@@ -6,10 +6,6 @@
     "Decision" : {
       "@id" : "https://w3id.org/def/dedl#Decision"
     },
-    "authorizator" : {
-      "@id" : "https://w3id.org/def/dedl#authorizator",
-      "@type" : "@id"
-    },
     "AuthorizationProcess" : {
       "@id" : "https://w3id.org/def/dedl#AuthorizationProcess"
     },
@@ -24,6 +20,10 @@
     },
     "license" : {
       "@id" : "http://purl.org/dc/terms/license"
+    },
+    "operates" : {
+      "@id" : "https://w3id.org/def/dedl#operates",
+      "@type" : "@id"
     },
     "Organization" : {
       "@id" : "https://w3id.org/def/dedl#Organization"
@@ -63,6 +63,10 @@
     "Participant" : {
       "@id" : "https://w3id.org/def/dedl#Participant"
     },
+    "element" : {
+      "@id" : "https://w3id.org/def/dedl#element",
+      "@type" : "@id"
+    },
     "creator" : {
       "@id" : "http://purl.org/dc/terms/creator"
     },
@@ -72,9 +76,8 @@
     "Individual" : {
       "@id" : "https://w3id.org/def/dedl#Individual"
     },
-    "participant" : {
-      "@id" : "https://w3id.org/def/dedl#participant",
-      "@type" : "@id"
+    "DataEcosystemElement" : {
+      "@id" : "https://w3id.org/def/dedl#DataEcosystemElement"
     },
     "identity" : {
       "@id" : "https://w3id.org/def/dedl#identity",
@@ -86,10 +89,6 @@
     },
     "policyLanguage" : {
       "@id" : "https://w3id.org/def/dedl#policyLanguage",
-      "@type" : "@id"
-    },
-    "authenticator" : {
-      "@id" : "https://w3id.org/def/dedl#authenticator",
       "@type" : "@id"
     },
     "policy" : {
@@ -104,6 +103,10 @@
     },
     "Identity" : {
       "@id" : "https://w3id.org/def/didl#Identity"
+    },
+    "uses" : {
+      "@id" : "https://w3id.org/def/dedl#uses",
+      "@type" : "@id"
     },
     "PolicyLanguage" : {
       "@id" : "https://w3id.org/def/dedl#PolicyLanguage"
@@ -125,6 +128,9 @@
     },
     "comment" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "TechnicalDataEcosystemElement" : {
+      "@id" : "https://w3id.org/def/dedl#TechnicalDataEcosystemElement"
     },
     "entity" : {
       "@id" : "https://w3id.org/def/dedl#entity",
