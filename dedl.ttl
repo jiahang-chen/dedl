@@ -90,14 +90,6 @@ dedl:authenticationRiskContext rdf:type owl:ObjectProperty ;
                                rdfs:label "authenticationRiskContext"@en .
 
 
-###  https://w3id.org/def/dedl#authenticator
-dedl:authenticator rdf:type owl:ObjectProperty ;
-                   rdfs:domain dedl:Participant ;
-                   rdfs:range dedl:Authenticator ;
-                   rdfs:comment "Relates a Participant to an Authenticator performing authentication on their behalf."@en ;
-                   rdfs:label "authenticator"@en .
-
-
 ###  https://w3id.org/def/dedl#authorizationArchitecture
 dedl:authorizationArchitecture rdf:type owl:ObjectProperty ;
                                rdfs:domain dedl:Authorizator ;
@@ -114,12 +106,10 @@ dedl:authorizationProcess rdf:type owl:ObjectProperty ;
                           rdfs:label "authorizationProcess"@en .
 
 
-###  https://w3id.org/def/dedl#authorizator
-dedl:authorizator rdf:type owl:ObjectProperty ;
-                  rdfs:domain dedl:Participant ;
-                  rdfs:range dedl:Authorizator ;
-                  rdfs:comment "Declares a Participant to be an Authorizator responsible for enforcing authorization decisions."@en ;
-                  rdfs:label "authorizator"@en .
+###  https://w3id.org/def/dedl#element
+dedl:element rdf:type owl:ObjectProperty ;
+             rdfs:domain dedl:DataEcosystem ;
+             rdfs:range dedl:DataEcosystemElement .
 
 
 ###  https://w3id.org/def/dedl#entity
@@ -138,12 +128,10 @@ dedl:identity rdf:type owl:ObjectProperty ;
               rdfs:label "identity"@en .
 
 
-###  https://w3id.org/def/dedl#participant
-dedl:participant rdf:type owl:ObjectProperty ;
-                 rdfs:domain dedl:DataEcosystem ;
-                 rdfs:range dedl:Participant ;
-                 rdfs:comment "Specifies a Participant within a DataEcosystem."@en ;
-                 rdfs:label "participant"@en .
+###  https://w3id.org/def/dedl#operates
+dedl:operates rdf:type owl:ObjectProperty ;
+              rdfs:domain dedl:Participant ;
+              rdfs:range dedl:TechnicalDataEcosystemElement .
 
 
 ###  https://w3id.org/def/dedl#policy
@@ -168,6 +156,12 @@ dedl:process rdf:type owl:ObjectProperty ;
              rdfs:range dedl:Process ;
              rdfs:comment "Associates a DataEcosystem with a particular Process."@en ;
              rdfs:label "process"@en .
+
+
+###  https://w3id.org/def/dedl#uses
+dedl:uses rdf:type owl:ObjectProperty ;
+          rdfs:domain dedl:Participant ;
+          rdfs:range dedl:TechnicalDataEcosystemElement .
 
 
 #################################################################
@@ -206,6 +200,7 @@ dedl:AuthenticationRiskContext rdf:type owl:Class ;
 
 ###  https://w3id.org/def/dedl#Authenticator
 dedl:Authenticator rdf:type owl:Class ;
+                   rdfs:subClassOf dedl:TechnicalDataEcosystemElement ;
                    rdfs:comment "An actor or component responsible for carrying out the authentication process."@en ;
                    rdfs:label "Authenticator"@en .
 
@@ -224,6 +219,7 @@ dedl:AuthorizationProcess rdf:type owl:Class ;
 
 ###  https://w3id.org/def/dedl#Authorizator
 dedl:Authorizator rdf:type owl:Class ;
+                  rdfs:subClassOf dedl:TechnicalDataEcosystemElement ;
                   rdfs:comment "An actor or component that assesses permissions and enforces authorization decisions."@en ;
                   rdfs:label "Authorizator"@en .
 
@@ -232,6 +228,12 @@ dedl:Authorizator rdf:type owl:Class ;
 dedl:DataEcosystem rdf:type owl:Class ;
                    rdfs:comment "A socio-technical system in which participants share and manage data and associated processes."@en ;
                    rdfs:label "DataEcosystem"@en .
+
+
+###  https://w3id.org/def/dedl#DataEcosystemElement
+dedl:DataEcosystemElement rdf:type owl:Class ;
+                          dcterms:abstract "Abstraction of consisting elements in a data ecosystem, which can be specified to technical data ecosystem elements and participants"@en ;
+                          rdfs:label "DataEcosystemElement"@en .
 
 
 ###  https://w3id.org/def/dedl#Decision
@@ -262,6 +264,7 @@ dedl:Organization rdf:type owl:Class ;
 
 ###  https://w3id.org/def/dedl#Participant
 dedl:Participant rdf:type owl:Class ;
+                 rdfs:subClassOf dedl:DataEcosystemElement ;
                  rdfs:comment "a stakeholder within the data ecosystem (either an Individual or Organization)."@en ;
                  rdfs:label "Participant"@en .
 
@@ -282,6 +285,13 @@ dedl:PolicyLanguage rdf:type owl:Class ;
 dedl:Process rdf:type owl:Class ;
              rdfs:comment "A series of operations or activities performed within the data ecosystem."@en ;
              rdfs:label "Process"@en .
+
+
+###  https://w3id.org/def/dedl#TechnicalDataEcosystemElement
+dedl:TechnicalDataEcosystemElement rdf:type owl:Class ;
+                                   rdfs:subClassOf dedl:DataEcosystemElement ;
+                                   dc:description "Technical components used in a data ecosystem, e.g., authenticators and authorizators"@en ;
+                                   rdfs:label "TechnicalDataEcosystemElement"@en .
 
 
 ###  https://w3id.org/def/didl#Identity
